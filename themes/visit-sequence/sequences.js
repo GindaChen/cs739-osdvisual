@@ -1,8 +1,13 @@
 // visit-sequence.js
 // Dimensions of sunburst.
+// var width = 750 * 100;
+// var height = 600 * 100;
+// var radius = Math.min(width, height) / 2;
+
 var width = 750;
-var height = 600;
+var height = 600 ;
 var radius = Math.min(width, height) / 2;
+
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
@@ -10,32 +15,15 @@ var b = {
 };
 
 // Mapping of step names to colors.
-// var colors = {
-//   "home": "#5687d1",
-//   "product": "#7b615c",
-//   "search": "#de783b",
-//   "account": "#6ab975",
-//   "other": "#a173d1",
-//   "end": "#bbbbbb"
-// };
-
-var colors = {
-  "home": "#5687d1",
-  "product": "#7b615c",
-  "search": "#de783b",
-  "account": "#6ab975",
-  "other": "#a173d1",
-  "end": "#bbbbbb"
-};
 
 var type_color = {
-  "host" : "#5687d1",
-  "ipservice" : "#de783b",
-  "osd" : "#7b615c",
-  "rack" : "#AAAAAA",
+  "root" : "#089ec7",
   "room" : "#6ab975",
-  "root" : "#bbbbbb",
-  "row" : "#00000AA"
+  "rack" : "#1ac9be",
+  "row" : "#008c62",
+  "host" : "#5687d1",
+  "osd" : "#7b615c",
+  "ipservice" : "#de783b"
 };
 
 var osd_color = {
@@ -74,10 +62,36 @@ var arc = d3.arc()
 //   createVisualization(json);
 // });
 
-url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/kelly.product.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/kelly.product.json"
+url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
 d3.json(url, function(text){
   createVisualization(text);
 });
+
+
+// TODO: deal with click logic later...
+panelItem = [];
+
+function click(d){
+  console.log("clicked", d);
+  if (d.panelSelected == null) {
+    d.panelSelected = false;  
+  }
+  d.panelSelected = !d.panelSelected;
+  console.log(d.panelSelected);
+
+  if (d.panelSelected) {
+
+
+
+  }else {
+
+  }
+
+
+}
 
 // Main function to draw and set up the visualization, once we have the data.
 function createVisualization(json) {
@@ -87,17 +101,15 @@ function createVisualization(json) {
   drawLegend();
   d3.select("#togglelegend").on("click", toggleLegend);
 
+  // Show legend at the beginning
+  toggleLegend();
+
   // Bounding circle underneath the sunburst, to make it easier to detect
   // when the mouse leaves the parent g.
   vis.append("svg:circle")
       .attr("r", radius)
       .style("opacity", 0);
 
-  // Turn the data into a d3 hierarchy and calculate the sums.
-  // var root = d3.hierarchy(json)
-  //     .sum(function(d) { console.log(d); return d.size; })
-  //     .sort(function(a, b) { return b.value - a.value; });
-  
   var root = d3.hierarchy(json)
       .sum(function(d) { return d.osd_counts; })
       .sort(function(a, b) { return b.value - a.value; });
@@ -115,7 +127,8 @@ function createVisualization(json) {
       .attr("d", arc)
       .attr("fill-rule", "evenodd")
       .style("opacity", 1)
-      .on("mouseover", mouseover);
+      .on("mouseover", mouseover)
+      .on("click", click);
 
   // TODO: Color for each piece
   path.style("fill", function(d) { 
@@ -124,12 +137,13 @@ function createVisualization(json) {
         var osd_health = a.osd_health;
         if (isNaN(osd_counts) || isNaN(osd_health)) { return null; }
 
+        // TODO: too ugly
         var fraction = (osd_health/osd_counts);
         var r = String(200 * (1 - fraction));
         var g = String(200 * fraction);
         var b = String(0);
         c = "rgb" + "(" + r + "," + g + "," + b + ")";
-        // console.log(r,g,b,c);
+
         return c;
   });
 
@@ -138,15 +152,12 @@ function createVisualization(json) {
 
   // Get total size of the tree = value of root node from partition.
   totalSize = path.datum().value;
-
-  // console.log(path.datum());
   
  };
 
 // TODO: Not very good representation...
 function dataToString(item){
   data = item.data;
-  console.log(data);
   if (data.type == "osd") {
     // TODO: This is an ugly, ugly, ugly code.
     return  "crush_weight: " + String(data.crush_weight) + "\n" +
@@ -165,7 +176,6 @@ function dataToString(item){
 
 // Fade all but the current sequence, and show it in the breadcrumb trail.
 function mouseover(d) {
-
   var percentageString = dataToString(d.data);
   
   // TODO: Adjust size of sentence
@@ -246,15 +256,20 @@ function breadcrumbPoints(d, i) {
     points.push(b.t + "," + (b.h / 2));
   }
   return points.join(" ");
-}
+} 
 
 // Update the breadcrumb trail to show the current sequence and percentage.
+// TODO: Change name `percentage` etc.
 function updateBreadcrumbs(nodeArray, percentageString) {
 
+
+  // console.log(nodeArray);
   // Data join; key function combines name and depth (= position in sequence).
   var trail = d3.select("#trail")
       .selectAll("g")
-      .data(nodeArray, function(d) { return d.data.name + d.depth; });
+      .data(nodeArray, function(d) { 
+        return d.data.name + d.depth; 
+      });
 
   // Remove exiting nodes.
   trail.exit().remove();
@@ -265,7 +280,6 @@ function updateBreadcrumbs(nodeArray, percentageString) {
   entering.append("svg:polygon")
       .attr("points", breadcrumbPoints)
       .style("fill", function(d) { 
-        console.log(type_color[d.data.data.type]);
         return type_color[d.data.data.type]; 
       });
 
@@ -275,20 +289,14 @@ function updateBreadcrumbs(nodeArray, percentageString) {
       .attr("dy", "0.35em")
       .attr("text-anchor", "middle")
       .attr("font-size", "10px") // TODO: Adjust font size to fit in
-      .text(function(d) { return d.data.name; });
+      .text(function(d) { return d.data.name + " (" + d.data.type + ")"; });
 
   // Merge enter and update selections; set position for all nodes.
   entering.merge(trail).attr("transform", function(d, i) {
+    // s = d.data.name + " (" + d.data.type + ")"
+    // w = b.w + s.length;
     return "translate(" + i * (b.w + b.s) + ", 0)";
   });
-
-  // Now move and update the percentage at the end.
-  // d3.select("#trail").select("#endlabel")
-  //     .attr("x", (nodeArray.length + 0.5) * (b.w + b.s))
-  //     .attr("y", b.h / 2)
-  //     .attr("dy", "0.35em")
-  //     .attr("text-anchor", "middle")
-  //     .text(percentageString);
 
   // Make the breadcrumb trail visible, if it's hidden.
   d3.select("#trail")
@@ -305,28 +313,25 @@ function drawLegend() {
 
   var legend = d3.select("#legend").append("svg:svg")
       .attr("width", li.w)
-      .attr("height", d3.keys(colors).length * (li.h + li.s));
+      .attr("height", d3.keys(type_color).length * (li.h + li.s));
 
   var g = legend.selectAll("g")
-      .data(d3.entries(colors))
+      .data(d3.entries(type_color))
       .enter().append("svg:g")
       .attr("transform", function(d, i) {
-              return "translate(0," + i * (li.h + li.s) + ")";
-           });
+          // s = d.data.name + " (" + d.data.type + ")"
+          // w = b.w + s.length;
+          return "translate(0," + i * (li.h + li.s) + ")";
+       });
 
-  // g.append("svg:rect")
-  //     .attr("rx", li.r)
-  //     .attr("ry", li.r)
-  //     .attr("width", li.w)
-  //     .attr("height", li.h)
-  //     .style("fill", function(d) { return d.value; });
-  
   g.append("svg:rect")
       .attr("rx", li.r)
       .attr("ry", li.r)
       .attr("width", li.w)
       .attr("height", li.h)
-      .style("fill", function(d) { return d.osd_count; });
+      .style("fill", function(d) { 
+        return type_color[d.key]; 
+      });
         
 
   g.append("svg:text")
@@ -335,7 +340,6 @@ function drawLegend() {
       .attr("dy", "0.35em")
       .attr("text-anchor", "middle")
       .text(function(d) { return d.key; });
-      // .text(function(d) { console.log(d.key); return d.key; });
 }
 
 function toggleLegend() {
@@ -346,47 +350,3 @@ function toggleLegend() {
     legend.style("visibility", "hidden");
   }
 }
-
-// Take a 2-column CSV and transform it into a hierarchical structure suitable
-// for a partition layout. The first column is a sequence of step names, from
-// root to leaf, separated by hyphens. The second column is a count of how 
-// often that sequence occurred.
-// function buildHierarchy(csv) {
-//   var root = {"name": "root", "children": []};
-//   for (var i = 0; i < csv.length; i++) {
-//     var sequence = csv[i][0];
-//     var size = +csv[i][1];
-//     if (isNaN(size)) { // e.g. if this is a header row
-//       continue;
-//     }
-//     var parts = sequence.split("-");
-//     var currentNode = root;
-//     for (var j = 0; j < parts.length; j++) {
-//       var children = currentNode["children"];
-//       var nodeName = parts[j];
-//       var childNode;
-//       if (j + 1 < parts.length) {
-//    // Not yet at the end of the sequence; move down the tree.
-//  	var foundChild = false;
-//  	for (var k = 0; k < children.length; k++) {
-//  	  if (children[k]["name"] == nodeName) {
-//  	    childNode = children[k];
-//  	    foundChild = true;
-//  	    break;
-//  	  }
-//  	}
-//   // If we don't already have a child node for this branch, create it.
-//  	if (!foundChild) {
-//  	  childNode = {"name": nodeName, "children": []};
-//  	  children.push(childNode);
-//  	}
-//  	currentNode = childNode;
-//       } else {
-//  	// Reached the end of the sequence; create a leaf node.
-//  	childNode = {"name": nodeName, "size": size};
-//  	children.push(childNode);
-//       }
-//     }
-//   }
-//   return root;
-// };
