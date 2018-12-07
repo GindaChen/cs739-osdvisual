@@ -74,7 +74,7 @@ var arc = d3.arc()
 //   createVisualization(json);
 // });
 
-url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/miniproduct/beesly.product.json?token=Ae3zEoJp2tXHSZRr8rVxbKWz1LqZosXpks5cE2ShwA%3D%3D"
+url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/kelly.product.json"
 d3.json(url, function(text){
   createVisualization(text);
 });
@@ -94,15 +94,19 @@ function createVisualization(json) {
       .style("opacity", 0);
 
   // Turn the data into a d3 hierarchy and calculate the sums.
-  var root = d3.hierarchy(json)
-      .sum(function(d) { return d.size; })
-      .sort(function(a, b) { return b.value - a.value; });
+  // var root = d3.hierarchy(json)
+  //     .sum(function(d) { console.log(d); return d.size; })
+  //     .sort(function(a, b) { return b.value - a.value; });
   
-  // For efficiency, filter nodes to keep only those large enough to see.
+  var root = d3.hierarchy(json)
+      .sum(function(d) { return d.osd_counts; })
+      .sort(function(a, b) { return b.value - a.value; });
+    
+  // TODO: Optional Filter
   var nodes = partition(root).descendants()
-      .filter(function(d) {
-          return (d.x1 - d.x0 > 0.005); // 0.005 radians = 0.29 degrees
-      });
+      // .filter(function(d) {
+      //     return (d.x1 - d.x0 > 0.005); // 0.005 radians = 0.29 degrees
+      // });
 
   var path = vis.data([json]).selectAll("path")
       .data(nodes)
@@ -110,9 +114,16 @@ function createVisualization(json) {
       .attr("display", function(d) { return d.depth ? null : "none"; })
       .attr("d", arc)
       .attr("fill-rule", "evenodd")
-      // .style("fill", function(d) { return colors[d.data.name]; })
-      .style("fill", function(d) { return colors[d.data.name]; })
-      .style("opacity", 1)
+      .style("fill", function(d) { 
+        var val = null;
+        if (d["type"] == "osd"){
+          console.log(d.status);
+          val = type_color
+        } else {
+          val = colors[d.data.name]; 
+        }
+        return val;
+      }).style("opacity", 1)
       .on("mouseover", mouseover);
 
   // Add the mouseleave handler to the bounding circle.
@@ -120,12 +131,16 @@ function createVisualization(json) {
 
   // Get total size of the tree = value of root node from partition.
   totalSize = path.datum().value;
+
+  console.log(totalSize);
+  
  };
 
 // Fade all but the current sequence, and show it in the breadcrumb trail.
 function mouseover(d) {
 
-  var percentage = (100 * d.value / totalSize).toPrecision(3);
+  var percentage = (100 * d.osd_count / totalSize).toPrecision(3);
+  // var percentage = (100 * d.value / totalSize).toPrecision(3);
   var percentageString = percentage + "%";
   if (percentage < 0.1) {
     percentageString = "< 0.1%";
@@ -264,12 +279,20 @@ function drawLegend() {
               return "translate(0," + i * (li.h + li.s) + ")";
            });
 
+  // g.append("svg:rect")
+  //     .attr("rx", li.r)
+  //     .attr("ry", li.r)
+  //     .attr("width", li.w)
+  //     .attr("height", li.h)
+  //     .style("fill", function(d) { return d.value; });
+  
   g.append("svg:rect")
       .attr("rx", li.r)
       .attr("ry", li.r)
       .attr("width", li.w)
       .attr("height", li.h)
-      .style("fill", function(d) { return d.value; });
+      .style("fill", function(d) { return d.osd_count; });
+        
 
   g.append("svg:text")
       .attr("x", li.w / 2)
@@ -277,6 +300,7 @@ function drawLegend() {
       .attr("dy", "0.35em")
       .attr("text-anchor", "middle")
       .text(function(d) { return d.key; });
+      // .text(function(d) { console.log(d.key); return d.key; });
 }
 
 function toggleLegend() {
@@ -292,42 +316,42 @@ function toggleLegend() {
 // for a partition layout. The first column is a sequence of step names, from
 // root to leaf, separated by hyphens. The second column is a count of how 
 // often that sequence occurred.
-function buildHierarchy(csv) {
-  var root = {"name": "root", "children": []};
-  for (var i = 0; i < csv.length; i++) {
-    var sequence = csv[i][0];
-    var size = +csv[i][1];
-    if (isNaN(size)) { // e.g. if this is a header row
-      continue;
-    }
-    var parts = sequence.split("-");
-    var currentNode = root;
-    for (var j = 0; j < parts.length; j++) {
-      var children = currentNode["children"];
-      var nodeName = parts[j];
-      var childNode;
-      if (j + 1 < parts.length) {
-   // Not yet at the end of the sequence; move down the tree.
- 	var foundChild = false;
- 	for (var k = 0; k < children.length; k++) {
- 	  if (children[k]["name"] == nodeName) {
- 	    childNode = children[k];
- 	    foundChild = true;
- 	    break;
- 	  }
- 	}
-  // If we don't already have a child node for this branch, create it.
- 	if (!foundChild) {
- 	  childNode = {"name": nodeName, "children": []};
- 	  children.push(childNode);
- 	}
- 	currentNode = childNode;
-      } else {
- 	// Reached the end of the sequence; create a leaf node.
- 	childNode = {"name": nodeName, "size": size};
- 	children.push(childNode);
-      }
-    }
-  }
-  return root;
-};
+// function buildHierarchy(csv) {
+//   var root = {"name": "root", "children": []};
+//   for (var i = 0; i < csv.length; i++) {
+//     var sequence = csv[i][0];
+//     var size = +csv[i][1];
+//     if (isNaN(size)) { // e.g. if this is a header row
+//       continue;
+//     }
+//     var parts = sequence.split("-");
+//     var currentNode = root;
+//     for (var j = 0; j < parts.length; j++) {
+//       var children = currentNode["children"];
+//       var nodeName = parts[j];
+//       var childNode;
+//       if (j + 1 < parts.length) {
+//    // Not yet at the end of the sequence; move down the tree.
+//  	var foundChild = false;
+//  	for (var k = 0; k < children.length; k++) {
+//  	  if (children[k]["name"] == nodeName) {
+//  	    childNode = children[k];
+//  	    foundChild = true;
+//  	    break;
+//  	  }
+//  	}
+//   // If we don't already have a child node for this branch, create it.
+//  	if (!foundChild) {
+//  	  childNode = {"name": nodeName, "children": []};
+//  	  children.push(childNode);
+//  	}
+//  	currentNode = childNode;
+//       } else {
+//  	// Reached the end of the sequence; create a leaf node.
+//  	childNode = {"name": nodeName, "size": size};
+//  	children.push(childNode);
+//       }
+//     }
+//   }
+//   return root;
+// };
