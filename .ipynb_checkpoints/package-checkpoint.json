@@ -1,0 +1,16 @@
+{
+  "name": "cs739-osdvisual",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^5.7.0",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.6"
+  }
+}
