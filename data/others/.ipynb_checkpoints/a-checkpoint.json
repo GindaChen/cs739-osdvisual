@@ -1,0 +1,1190 @@
+{
+ "name": "Cellfie Tasks",
+ "children": [
+  {
+    "name": "Energy Metabolism",
+    "children": [
+      {
+        "name": "Oxydative Phosphorylation",
+        "children": [
+          {
+            "size": 100,
+            "name": "Oxidative phosphorylation via NADH-coenzyme Q oxidoreductase (COMPLEX I)"
+          },
+          { 
+            "size": 100,
+            "name": "Oxidative phosphorylation via succinate-coenzyme Q oxidoreductase (COMPLEX II)"
+          }
+        ]
+      },
+      {
+        "name": "Krebs Cycle",
+        "children": [
+          {
+            "size": 100,
+            "name": "Krebs cycle - oxidative decarboxylation of pyruvate"
+          },
+          {
+            "size": 100,
+            "name": "Krebs cycle - NADH generation"
+          }
+        ]
+      },
+      {
+        "name": "ATP Generation",
+        "children": [
+          {
+            "size": 100,
+            "name": "ATP regeneration from glucose (normoxic conditions) - glycolysis + krebs cycle"
+          },
+          {
+            "size": 100,
+            "name": "ATP generation from glucose (hypoxic conditions) - glycolysis"
+          }
+        ]
+      },
+      {
+        "name": "Oxidative Phosphorylation & ROS Detoxification",
+        "children": [
+          {
+            "size": 100,
+            "name": "Reactive oxygen species detoxification (H2O2 to H2O)"
+          }
+        ]
+      },
+      {
+        "name": "Redox Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Presence of the thioredoxin system through the thioredoxin reductase activity"
+          }
+        ] 
+      }
+    ] 
+  },
+  {
+    "name": "Nucleotide Metabolism",
+    "children": [
+      {
+        "name": "IMP Synthesis / Purine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Inosine monophosphate synthesis (IMP)"
+          },
+          {
+            "size": 100,
+            "name": "Guanosine triphosphate synthesis (GTP)"
+          } 
+        ]
+      },
+      {
+        "name": "UMP Synthesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "Cytidine triphosphate synthesis (CTP)"
+          },
+          {
+            "size": 100,
+            "name": "Uridine triphosphate synthesis (UTP)"
+          } 
+        ]
+      },
+      {
+        "name": "Deoxynucleotides Synthesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "Deoxyadenosine triphosphate synthesis (dATP)"
+          },
+          {
+            "size": 100,
+            "name": "Deoxycytidine triphosphate synthesis (dCTP)"
+          },
+          {
+            "size": 100,
+            "name": "Deoxyguanosine triphosphate synthesis (dGTP)"
+          },
+          {
+            "size": 100,
+            "name": "Deoxyuridine triphosphate synthesis (dUTP)"
+          },
+          {
+            "size": 100,
+            "name": "Deoxythymidine triphosphate synthesis (dTTP)"
+          }
+        ]
+      },
+      {
+        "name": "Salvage",
+        "children": [
+          {
+            "size": 100,
+            "name": "AMP salvage from adenine"
+          },
+          {
+            "size": 100,
+            "name": "IMP salvage from hypoxanthine"
+          },
+          {
+            "size": 100,
+            "name": "GMP salvage from guanine"
+          }
+        ]
+      },
+      {
+        "name": "Cofactor",
+        "children": [
+          {
+            "size": 100,
+            "name": "3'-Phospho-5'-adenylyl sulfate synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Purine Catabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Degradation of adenine to urate"
+          },
+          {
+            "size": 100,
+            "name": "Degradation of guanine to urate"
+          }
+        ]
+      },
+      {       
+        "name": "Pyrimidine Catabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Degradation of cytosine"
+          },
+          {
+            "size": 100,
+            "name": "Degradation of uracil"
+          }
+        ]
+      } 
+    ]
+  },
+  {
+    "name": "Carbohydrates Metabolism",
+    "children": [
+      {
+        "name": "Gluconeogenesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "Gluconeogenesis from pyruvate"
+          },
+          {
+            "size": 100,
+            "name": "Gluconeogenesis from Lactate"
+          },
+          {
+            "size": 100,
+            "name": "Gluconeogenesis from Glycerol"
+          },
+          {
+            "size": 100,
+            "name": "Gluconeogenesis from Alanine"
+          },
+          {
+            "size": 100,
+            "name": "Gluconeogenesis from Glutamine"
+          }
+        ]
+      },
+      {
+        "name": "Glycolysis/Gluconeogenesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "Ethanol to acetaldehyde"
+          }
+        ]
+      },
+      {
+        "name": "Pyruvate Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Glucose to lactate conversion"
+          },
+          {
+            "size": 100,
+            "name": "Malate to pyruvate conversion"
+          }
+        ]
+      },
+      {
+        "name": "Pentose Phosphate Pathway",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of fructose-6-phosphate from erythrose-4-phosphate (HMP shunt)"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of ribose-5-phosphate"
+          }
+        ]
+      },
+      {
+        "name": "Galactose Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of lactose"
+          }
+        ]
+      },
+      {
+        "name": "Glycogen Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Glycogen biosynthesis"
+          },
+          {
+            "size": 100,
+            "name": "Glycogen degradation"
+          }
+        ]
+      },
+      {
+        "name": "Fructose Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Fructose degradation (to glucose-3-phosphate)"
+          },
+          {
+            "size": 100,
+            "name": "Fructose to glucose conversion (via fructose-6-phosphate)"
+          }
+        ]
+      },
+      {
+        "name": "Nucleotide Sugar",
+        "children": [
+          {
+            "size": 100,
+            "name": "UDP-glucose synthesis"
+          },
+          {
+            "size": 100,
+            "name": "UDP-galactose synthesis"
+          },
+          {
+            "size": 100,
+            "name": "UDP-glucuronate synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Fucose Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "GDP-L-fucose synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Mannose Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Mannose degradation (to fructose-6-phosphate)"
+          },
+          {
+            "size": 100,
+            "name": "GDP-mannose synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Amino Sugars Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "UDP-N-acetyl D-galactosamine synthesis"
+          },
+          {
+            "size": 100,
+            "name": "CMP-N-acetylneuraminate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "N-Acetylglucosamine synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Pentose and Glucuronate Interconversion",
+        "children": [
+          {
+            "size": 100,
+            "name": "Glucuronate synthesis (via inositol)"
+          },
+          {
+            "size": 100,
+            "name": "Glucuronate synthesis (via udp-glucose)"
+          }
+        ]
+      },
+      {
+        "name": "Ketogenesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of acetone"
+          },
+          {
+            "size": 100,
+            "name": "(R)-3-Hydroxybutanoate synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Phosphate Inositol Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of inositol"
+          },
+          {
+            "size": 100,
+            "name": "Inositol as input for glucuronate-xylulose pathway"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of phosphatidylinositol from inositol"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate to 1D-myo-inositol 1,4,5-trisphosphate"
+          }
+        ]
+      },
+      {
+        "name": "Starch Degradation",
+        "children": [
+          {
+            "size": 100,
+            "name": "Starch degradation"
+          }
+        ]
+      },
+      {
+        "name": "Glyoxylate Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Link between glyoxylate metabolism and pentose phosphate pathway (Xylulose to glycolate)"
+          }
+        ]
+      },
+      {
+        "name": "Methylglyoxal Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of methylglyoxal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Amino Acids Metabolism",
+    "children": [
+      {
+        "name": "Alanine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Alanine synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Alanine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of alanine from glutamine"
+          }
+        ]
+      },
+      {
+        "name": "Arginine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Arginine synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Arginine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of arginine from glutamine"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of nitric oxide from arginine"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of creatine from arginine"
+          }
+        ]
+      },
+      {
+        "name": "Aspartate Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of aspartate from glutamine"
+          },
+          {
+            "size": 100,
+            "name": "Aspartate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Aspartate degradation"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of aspartate to arginine"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of aspartate to beta-alanine"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of asparate to asparagine"
+          }
+        ]
+      },
+      {
+        "name": "Asparagine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Asparagine synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Asparagine degradation"
+          }
+        ]
+      },
+      {
+        "name": "Beta-Alanine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "beta-Alanine synthesis"
+          },
+          {
+            "size": 100,
+            "name": "beta-Alanine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of carnosine to beta-alanine"
+          },
+          {
+            "size": 100,
+            "name": "Beta-alanine to 3-oxopropanoate"
+          }
+        ]
+      },
+      {
+        "name": "Cysteine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Cysteine synthesis (need serine and methionine)"
+          },
+          {
+            "size": 100,
+            "name": "Cysteine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of cysteine from cystine"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of taurine from cysteine"
+          }
+        ]
+      },
+      {
+        "name": "Glutamate Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Glutamate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Glutamate degradation"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of glutamate to glutamine"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of glutamate to proline"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of GABA into succinate"
+          }
+        ]
+      },
+      {
+        "name": "Glutamine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Glutamine synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Glutamine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Glutaminolysis (glutamine to lactate)"
+          }
+        ]
+      },
+      {
+        "name": "Glutathione Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Glutathionate synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Glycine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Glycine synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Glycine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of glycine to pyruvate"
+          }
+        ]
+      },
+      {
+        "name": "Histidine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Histidine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of histidine to glutamate"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of histidine to histamine"
+          }
+        ]
+      },
+      {
+        "name": "Homocysteine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Homocysteine synthesis (need methionine)"
+          },
+          {
+            "size": 100,
+            "name": "Homocysteine degradation"
+          }
+        ]
+      },
+      {
+        "name": "Isoleucine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Isoleucine degradation"
+          }
+        ]
+      },
+      {
+        "name": "Leucine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Leucine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of leucine to acetyl-coA"
+          }
+        ]
+      },
+      {
+        "name": "Lysine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Lysine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of lysine to L-Saccharopine"
+          },
+          {
+            "size": 100,
+            "name": "Conversion of lysine to L-2-Aminoadipate"
+          }
+        ]
+      },
+      {
+        "name": "Methionine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Methionine degradation"
+          },
+          {
+            "size": 100,
+            "name": "S-adenosyl-L-methionine synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Ornithine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Ornithine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of ornithine from glutamine"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of spermidine from ornithine"
+          }
+        ]
+      },
+      {
+        "name": "Serine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Serine synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Serine degradation"
+          }
+        ]
+      },
+      {
+        "name": "Phenylalanine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Phenylalanine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Phenylalanine to phenylacetaldehyde"
+          },
+          {
+            "size": 100,
+            "name": "Phenylalanine to phenylacetyl-L-glutaminate"
+          },
+          {
+            "size": 100,
+            "name": "Phenylalanine to tyrosine"
+          }
+        ]
+      },
+      {
+        "name": "Proline Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Proline synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Proline degradation"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of proline from glutamine"
+          }
+        ]
+      },
+      {
+        "name": "Threonine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Threonine degradation"
+          }
+        ]
+      },
+      {
+        "name": "Tryptohpan Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Tryptophan degradation"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of anthranilate from tryptophan"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of kynate from tryptophan"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of L-kynurenine from tryptophan"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of N-formylanthranilate from tryptophan"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of quinolinate from tryptophan"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of serotonin from tryptophan"
+          }
+        ]
+      },
+      {
+        "name": "Tyrosine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Tyrosine synthesis (need phenylalanine)"
+          },
+          {
+            "size": 100,
+            "name": "Tyrosine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Tyrosine to adrenaline"
+          },
+          {
+            "size": 100,
+            "name": "Tyrosine to dopamine"
+          },
+          {
+            "size": 100,
+            "name": "Tyrosine to acetoacetate and fumarate"
+          }
+        ]
+      },
+      {
+        "name": "Valine Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Valine degradation"
+          },
+          {
+            "size": 100,
+            "name": "Valine to succinyl-coA"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lipids Metabolism",
+    "children": [
+      {
+        "name": "Cholesterol Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Hydroxymethylglutaryl-CoA synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Cholesterol synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Acetoacetate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Mevalonate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Farnesyl-pyrophosphate synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Glycerophospholipid Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Glycerol-3-phosphate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Phosphatidyl-choline synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Phosphatidyl-ethanolamine synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Phosphatidyl-serine synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Phosphatidyl-inositol synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Cardiolipin synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Triacyglycerol Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Triacylglycerol synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Sphingolipid Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Sphingomyelin synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Ceramide synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Fatty Acid Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Palmitate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Palmitate degradation"
+          },
+          {
+            "size": 100,
+            "name": "Palmitolate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Palmitolate degradation"
+          },
+          {
+            "size": 100,
+            "name": "cis-vaccenic acid synthesis"
+          },
+          {
+            "size": 100,
+            "name": "cis-vaccenic acid degradation"
+          },
+          {
+            "size": 100,
+            "name": "Elaidate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Elaidate degradation"
+          },
+          {
+            "size": 100,
+            "name": "Linolenate degradation"
+          },
+          {
+            "size": 100,
+            "name": "Linoleate degradation"
+          },
+          {
+            "size": 100,
+            "name": "gamma-Linolenate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "gamma-Linolenate degradation"
+          },
+          {
+            "size": 100,
+            "name": "Arachidonate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Arachidonate degradation"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of malonyl-coa"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of palmitoyl-CoA"
+          }
+        ]
+      },
+      {
+        "name": "Bile Acid Synthesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "Taurochenodeoxycholate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "Glycochenodeoxycholate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "tauro-cholate synthesis"
+          },
+          {
+            "size": 100,
+            "name": "glyco-cholate synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Eicosanoid Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of thromboxane from arachidonate"
+          }
+        ]
+      },
+      {
+        "name": "Ganglioside Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of galactosyl glucosyl ceramide (link with ganglioside metabolism)"
+          },
+          {
+            "size": 100,
+            "name": "Synthesis of glucocerebroside"
+          }
+        ]
+      },
+      {
+        "name": "Globoside Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of globoside (link with globoside metabolism)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Vitamin & Cofactor Metabolism",
+    "children": [
+      {
+        "name": "Coenzyme NAD Biosynthesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "NAD synthesis from nicotinamide"
+          }
+        ]
+      },
+      {
+        "name": "Coenzyme FAD Biosynthesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "FAD synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Coenzyme A Biosynthesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of coenzyme A"
+          }
+        ]
+      },
+      {
+        "name": "Ubiquinone 10 Biosynthesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of ubiquinone from tyrosine"
+          }
+        ]
+      },
+      {
+        "name": "Folate Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Tetrahydrofolate synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Vitamin B6 Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Pyridoxal-phosphate synthesis"
+          }
+        ]
+      },
+      {
+        "name": "Heme Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Synthesis of bilirubin"
+          },
+          {
+            "size": 100,
+            "name": "Heme synthesis"
+          }
+        ]
+      },
+      {
+        "name": "GPI Anchor Biosynthesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "Phosphatidyl-inositol to glucosaminyl-acylphosphatidylinositol"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Glycan Metabolism",
+    "children": [
+      {
+        "name": "GPI Anchor Biosynthesis",
+        "children": [
+          {
+            "size": 100,
+            "name": "Glucosaminyl-acylphosphatidylinositoll to deacylated-glycophosphatidylinositol (GPI)-anchored protein"
+          }
+        ]
+      },
+      {
+        "name": "N-Glycan Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Degradation of n2m2nmasn"
+          },
+          {
+            "size": 100,
+            "name": "Biosynthesis of m4mpdol_U"
+          },
+          {
+            "size": 100,
+            "name": "Biosynthesis of g3m8masn"
+          },
+          {
+            "size": 100,
+            "name": "Degradation of s2l2fn2m2masn"
+          }        
+        ]
+      },
+      {
+        "name": "O-Glycan Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Biosynthesis of core2 (beta-D-Galactosyl-1,\n3-(N-acetyl-beta-D-glucosaminyl-1,6)\n-N-acetyl-D-galactosaminyl-R)"
+          },
+          {
+            "size": 100,
+            "name": "Biosynthesis of core4 (NAcetyl-beta-D-glucosaminyl-1,6-(Nacetyl-beta-D-glucosaminyl-1,3)-N-acetyl-D-galactosaminyl-R)"
+          },
+          {
+            "size": 100,
+            "name": "Biosynthesis of Tn_antigen (Glycoprotein N-acetyl-D-galactosamine)"
+          }
+        ]
+      },
+      {
+        "name": "Keratan Sulfate Metabolism",
+        "children": [
+          {
+            "size": 100,
+            "name": "Keratan sulfate biosynthesis from O-glycan (core 2-linked)"
+          },
+          {
+            "size": 100,
+            "name": "Keratan sulfate biosynthesis from O-glycan (core 4-linked)"
+          },
+          {
+            "size": 100,
+            "name": "Keratan sulfate degradation"
+          },
+          {
+            "size": 100,
+            "name": "Keratan sulfate biosynthesis from N-glycan"
+          }
+        ]
+      }
+    ]
+  }
+  ]
+}

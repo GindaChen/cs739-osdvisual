@@ -1,0 +1,9 @@
+{
+  "name": "ceph-hierachical-view-tryout",
+  "main": "ceph-hierachical-view-tryout.js",
+  "version": "100.0.0",
+  "author": {
+    "name": "Ginda Chen",
+    "url": "https://beta.observablehq.com/@gindachen"
+  }
+}
