@@ -6,6 +6,21 @@
 
 Inherit sequence ring.
 
+### Question
+
+- [ ] 
+- [ ] What information should be shown as size?
+  - [ ] Size of pie: crushmap size
+- [ ] as color?
+  - [ ] Group of cluster
+  - [ ] OSD Health status
+
+
+
+
+
+
+
 ### Big Todo
 
 - [ ] Zoomable pie chart

@@ -11,7 +11,7 @@ var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
-  w: 120, h: 30, s: 3, t: 10
+  w: 120, h: 40, s: 3, t: 10
 };
 
 // Mapping of step names to colors.
@@ -63,34 +63,22 @@ var arc = d3.arc()
 // });
 
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/kelly.product.json"
-url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
-// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
-// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
+// url = "https://raw.githubus ercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
+url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
 d3.json(url, function(text){
   createVisualization(text);
 });
 
 
-// TODO: deal with click logic later...
+
 panelItem = [];
 
 function click(d){
-  console.log("clicked", d);
-  if (d.panelSelected == null) {
-    d.panelSelected = false;  
-  }
-  d.panelSelected = !d.panelSelected;
-  console.log(d.panelSelected);
-
-  if (d.panelSelected) {
+  console.log(d.children);
 
 
-
-  }else {
-
-  }
-
-
+  
 }
 
 // Main function to draw and set up the visualization, once we have the data.
@@ -114,10 +102,11 @@ function createVisualization(json) {
       .sum(function(d) { return d.osd_counts; })
       .sort(function(a, b) { return b.value - a.value; });
     
-  // TODO: Optional Filter
-  var nodes = partition(root).descendants()
+  // TODO: Optional Filter - link it into panel
+  var nodes = partition(root).descendants();
+    // 1. Filter that filters out the healthy nodes
       // .filter(function(d) {
-      //     return (d.x1 - d.x0 > 0.005); // 0.005 radians = 0.29 degrees
+      //     return d.data.osd_health != d.data.osd_counts;
       // });
 
   var path = vis.data([json]).selectAll("path")
@@ -138,7 +127,15 @@ function createVisualization(json) {
         if (isNaN(osd_counts) || isNaN(osd_health)) { return null; }
 
         // TODO: too ugly
-        var fraction = (osd_health/osd_counts);
+        // 1. Show the averaged health percentage of each node
+        // var fraction = (osd_health/osd_counts);
+        // var r = String(200 * (1 - fraction));
+        // var g = String(200 * fraction);
+        // var b = String(0);
+        // c = "rgb" + "(" + r + "," + g + "," + b + ")";
+
+        // 2. Show whether under this level there are node down
+        var fraction = (osd_health == osd_counts) ? 1 : 0;
         var r = String(200 * (1 - fraction));
         var g = String(200 * fraction);
         var b = String(0);
@@ -155,7 +152,7 @@ function createVisualization(json) {
   
  };
 
-// TODO: Not very good representation...
+// TODO: Ugly Code
 function dataToString(item){
   data = item.data;
   if (data.type == "osd") {
