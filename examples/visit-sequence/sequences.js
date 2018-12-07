@@ -6,7 +6,7 @@ var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
-  w: 75, h: 30, s: 3, t: 10
+  w: 120, h: 30, s: 3, t: 10
 };
 
 // Mapping of step names to colors.
@@ -29,13 +29,13 @@ var colors = {
 };
 
 var type_color = {
-  "host" : "#AAAAAA",
-  "ipservice" : "#AAAAAA",
-  "osd" : "#AAAAAA",
+  "host" : "#5687d1",
+  "ipservice" : "#de783b",
+  "osd" : "#7b615c",
   "rack" : "#AAAAAA",
-  "room" : "#AAAAAA",
-  "root" : "#AAAAAA",
-  "row" : "#AAAAAA"
+  "room" : "#6ab975",
+  "root" : "#bbbbbb",
+  "row" : "#00000AA"
 };
 
 var osd_color = {
@@ -114,17 +114,24 @@ function createVisualization(json) {
       .attr("display", function(d) { return d.depth ? null : "none"; })
       .attr("d", arc)
       .attr("fill-rule", "evenodd")
-      .style("fill", function(d) { 
-        var val = null;
-        if (d["type"] == "osd"){
-          console.log(d.status);
-          val = type_color
-        } else {
-          val = colors[d.data.name]; 
-        }
-        return val;
-      }).style("opacity", 1)
+      .style("opacity", 1)
       .on("mouseover", mouseover);
+
+  // TODO: Color for each piece
+  path.style("fill", function(d) { 
+        var a = d.data;
+        var osd_counts = a.osd_counts;
+        var osd_health = a.osd_health;
+        if (isNaN(osd_counts) || isNaN(osd_health)) { return null; }
+
+        var fraction = (osd_health/osd_counts);
+        var r = String(200 * (1 - fraction));
+        var g = String(200 * fraction);
+        var b = String(0);
+        c = "rgb" + "(" + r + "," + g + "," + b + ")";
+        // console.log(r,g,b,c);
+        return c;
+  });
 
   // Add the mouseleave handler to the bounding circle.
   d3.select("#container").on("mouseleave", mouseleave);
@@ -132,22 +139,46 @@ function createVisualization(json) {
   // Get total size of the tree = value of root node from partition.
   totalSize = path.datum().value;
 
-  console.log(totalSize);
+  // console.log(path.datum());
   
  };
+
+// TODO: Not very good representation...
+function dataToString(item){
+  data = item.data;
+  console.log(data);
+  if (data.type == "osd") {
+    // TODO: This is an ugly, ugly, ugly code.
+    return  "crush_weight: " + String(data.crush_weight) + "\n" +
+  "depth: " + String(data.depth) + "\n" +
+  "device_class: " + String(data.device_class) + "\n" +
+  "exists: " + String(data.exists) + "\n" +
+  "primary_affinity: " + String(data.primary_affinity) + "\n" +
+  "reweight: " + String(data.reweight) + "\n" +
+  "status: " + String(data.status) + "\n";
+
+  }
+  return "id: " + String(data.id)   + "\n" + 
+       "type: " + String(data.type) + "\n";
+}
+
 
 // Fade all but the current sequence, and show it in the breadcrumb trail.
 function mouseover(d) {
 
-  var percentage = (100 * d.osd_count / totalSize).toPrecision(3);
-  // var percentage = (100 * d.value / totalSize).toPrecision(3);
-  var percentageString = percentage + "%";
-  if (percentage < 0.1) {
-    percentageString = "< 0.1%";
-  }
+  var percentageString = dataToString(d.data);
+  
+  // TODO: Adjust size of sentence
+  fontSize = d.data.name.length > 10 ? "1.8em": "2.5em";
 
+  d3.select("#DeviceName")
+      .text(d.data.name)
+      .style("text-align", "center")
+      .style("font-size", fontSize);
+      
   d3.select("#percentage")
-      .text(percentageString);
+      .text(percentageString)
+      .style("font-size", "10px");
 
   d3.select("#explanation")
       .style("visibility", "");
@@ -163,9 +194,9 @@ function mouseover(d) {
   // Then highlight only those that are an ancestor of the current segment.
   vis.selectAll("path")
       .filter(function(node) {
-                return (sequenceArray.indexOf(node) >= 0);
-              })
-      .style("opacity", 1);
+        return (sequenceArray.indexOf(node) >= 0);
+  })
+  .style("opacity", 1);
 }
 
 // Restore everything to full opacity when moving off the visualization.
@@ -233,13 +264,17 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 
   entering.append("svg:polygon")
       .attr("points", breadcrumbPoints)
-      .style("fill", function(d) { return colors[d.data.name]; });
+      .style("fill", function(d) { 
+        console.log(type_color[d.data.data.type]);
+        return type_color[d.data.data.type]; 
+      });
 
   entering.append("svg:text")
       .attr("x", (b.w + b.t) / 2)
       .attr("y", b.h / 2)
       .attr("dy", "0.35em")
       .attr("text-anchor", "middle")
+      .attr("font-size", "10px") // TODO: Adjust font size to fit in
       .text(function(d) { return d.data.name; });
 
   // Merge enter and update selections; set position for all nodes.
@@ -248,12 +283,12 @@ function updateBreadcrumbs(nodeArray, percentageString) {
   });
 
   // Now move and update the percentage at the end.
-  d3.select("#trail").select("#endlabel")
-      .attr("x", (nodeArray.length + 0.5) * (b.w + b.s))
-      .attr("y", b.h / 2)
-      .attr("dy", "0.35em")
-      .attr("text-anchor", "middle")
-      .text(percentageString);
+  // d3.select("#trail").select("#endlabel")
+  //     .attr("x", (nodeArray.length + 0.5) * (b.w + b.s))
+  //     .attr("y", b.h / 2)
+  //     .attr("dy", "0.35em")
+  //     .attr("text-anchor", "middle")
+  //     .text(percentageString);
 
   // Make the breadcrumb trail visible, if it's hidden.
   d3.select("#trail")

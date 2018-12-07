@@ -50,6 +50,8 @@ body {
   z-index: -1;
 }
 
-#percentage {
-  font-size: 2.5em;
+#DeviceName {
+  /*font-size:*/ 2.5em;
+  font-size: 20px;
+  /*display:block;*/
 }
