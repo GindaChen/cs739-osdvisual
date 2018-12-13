@@ -187,10 +187,9 @@ function createVisualization(json) {
 	.tween("data", d => {
 		const i = d3.interpolate(d.current, d.target);
 		return t => d.current = i(t);
-	}).attr("fill-opacity", d => {
-		if(d == target){
-			return 0;
-		}
+	})
+	.attr("fill-opacity", d => {
+		if(d == target){ return 0; }
 		return 1;
 	})
 	.attrTween("d", d => () => arc(d.current));
@@ -216,9 +215,6 @@ function dataToString(item){
 			 "type: " + String(data.type) + "\n";
 }
 
-function clicked(p) {
-	console.log(p);
-}
 
 // Fade all but the current sequence, and show it in the breadcrumb trail.
 function mouseover(d) {

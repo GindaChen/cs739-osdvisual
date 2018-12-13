@@ -94,10 +94,8 @@ Zoomable Sequence Sunburst is the model we target on. Specifically we will focus
 - [ ] Zoomable pie chart
 - [x] Delay when move out from the focus
 - [ ] Too much OSD show case
-- [ ] Reasonable, selectable (changeable) color schemes (for different purpose)
-  - [ ] Hierachical path
-  - [ ] OSD: up, down, in, out - infomration
-  - [ ] crush weight
+- [x] Reasonable, selectable (changeable) color schemes (for different purpose)
+  - [x] Hierachical path
 - [ ] Different information 
   - [ ] crush map weight
   - [ ] up/down information
