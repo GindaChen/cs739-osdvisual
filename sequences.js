@@ -48,19 +48,21 @@ var vis = d3.select("#chart").append("svg:svg")
 	.attr("id", "container")
 	.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-var partition = d3.partition().size([2 * Math.PI, radius * radius]);
+var partition = d3.partition()
+	.size([2 * Math.PI, radius * radius]);
 
 var arc = d3.arc()
 	.startAngle(function(d) { return d.x0; })
 	.endAngle(function(d) { return d.x1; })
-	// .padAngle(function(d) {return Math.min( (d.x1 - d.x0)/2, 0.005 ) })
+	.padAngle(d => Math.min((d.x1 - d.x0) / 2, 0.005))
+  .padRadius(radius / 2)
 	.innerRadius(function(d) { return Math.sqrt(d.y0); })
 	.outerRadius(function(d) { return Math.sqrt(d.y1); });
 
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/kelly.product.json"
-// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
+url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
 // url = "https://raw.githubus ercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
-url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
 d3.json(url, function(text){
 	createVisualization(text);
 });
@@ -93,8 +95,9 @@ function createVisualization(json) {
 		.style("opacity", 0);
 
 	root = d3.hierarchy(json)
-		.sum(function(d) { return d.osd_counts; })
-		.sort(function(a, b) { return b.value - a.value; });
+		// Forgive me for the magic numbers. It is 4am and my mind doesn't work right
+		.sum(function(d) {return Math.pow(d.osd_counts, 0.4); })
+		.sort(function(a, b) { return a.osd_counts - b.osd_counts; });
 
 	// TODO: Optional Filter - link it into panel
 	var nodes = partition(root).descendants();

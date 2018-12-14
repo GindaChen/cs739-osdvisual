@@ -97,8 +97,9 @@ Zoomable Sequence Sunburst is the model we target on. Specifically we will focus
 - [x] Reasonable, selectable (changeable) color schemes (for different purpose)
   - [x] Hierachical path
 - [ ] Different information
-  - [ ] crush map weight
+  - [x] crush map weight // currently based on osd_counts
   - [ ] up/down information
+  - [x] use gradient color
 - [ ] Label each node (as much as possible)
 
 #### Not so Urgent
