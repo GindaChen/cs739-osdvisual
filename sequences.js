@@ -2,7 +2,7 @@
 
 // @Define Dimensions of sunburst.
 var width = 750;
-var height = 600 ;
+var height = 600;
 var radius = Math.min(width, height) / 2;
 
 
@@ -96,6 +96,7 @@ function createVisualization(json) {
 
 	root = d3.hierarchy(json)
 		// Forgive me for the magic numbers. It is 4am and my mind doesn't work right
+		// It's fine. We all have the desperation.
 		.sum(function(d) {return Math.pow(d.osd_counts, 0.4); })
 		.sort(function(a, b) { return a.osd_counts - b.osd_counts; });
 
@@ -150,6 +151,9 @@ function createVisualization(json) {
 
  	let target;
 
+ 	// I Kinda don't like this logic very much...
+ 	// Let's fix it to parent-children model
+ 	// where you can enter the children at once, but can only exit the state by the parent
  	if (p.depth > 1) {
  		target = p.bZoomed ? p : ( p.children ? p : p.parent);
  	} else {

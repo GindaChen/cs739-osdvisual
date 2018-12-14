@@ -91,20 +91,22 @@ Zoomable Sequence Sunburst is the model we target on. Specifically we will focus
 
 #### Important
 
-- [ ] Zoomable pie chart
+- [x] Zoomable pie chart
 - [x] Delay when move out from the focus
-- [ ] Too much OSD show case
+- [x] Too much OSD show case
 - [x] Reasonable, selectable (changeable) color schemes (for different purpose)
   - [x] Hierachical path
-- [ ] Different information
+- [x] Different information
   - [x] crush map weight // currently based on osd_counts
-  - [ ] up/down information
-  - [x] use gradient color
-- [ ] Label each node (as much as possible)
+  - [x] up/down information
+  - [x] use gradient color to indicate failure
+- [ ] Animation Delay
+- [ ] A panel for selection of data
 
 #### Not so Urgent
 
 - [ ] Change File might change data location - Should find a way to update data with least change of element in webpage
+- [ ] Label each node (if possible, since we don't like the look..)
 
 
 
