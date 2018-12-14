@@ -35,9 +35,6 @@ var osd_color = {
 // we set this later, after loading the data.
 var totalSize = 0;
 
-// @Define Last zoomed element
-var oLastZoomed = null;
-
 // @Define History stack
 var aHistory = [];
 
@@ -60,23 +57,28 @@ var arc = d3.arc()
 	.outerRadius(function(d) { return Math.sqrt(d.y1); });
 
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/kelly.product.json"
-url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
-// url = "https://raw.githubus ercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
+url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
 d3.json(url, function(text){
 	createVisualization(text);
 });
 
-function rgbString(r, g, b){
-	return "rgb" + "(" + String(r) + "," + String(g) + "," + String(b) + ")";
-}
+// Replace it by d3.rgb(r,g,b [, opacity])
+// function rgbString(r, g, b){
+// 	return "rgb" + "(" + String(r) + "," + String(g) + "," + String(b) + ")";
+// }
 
-function hslString(h, s, l){
-	return `hsl(${h},${s},${l})`;
-}
-
+// Replace it by d3.hsl(r,g,b [, opacity])
+// function hslString(h, s, l){
+// 	return `hsl(${h},${s},${l})`;
+// }
 
 var root = null;
+
+// @Define Last zoomed element
+var prevTarget = root;
+
 // Main function to draw and set up the visualization, once we have the data.
 function createVisualization(json) {
 
@@ -97,7 +99,10 @@ function createVisualization(json) {
 	root = d3.hierarchy(json)
 		// Forgive me for the magic numbers. It is 4am and my mind doesn't work right
 		// It's fine. We all have the desperation.
-		.sum(function(d) {return Math.pow(d.osd_counts, 0.4); })
+		.sum(function(d) {
+			let magicNumber = 0.4;
+			return Math.pow(d.osd_counts, magicNumber); 
+		})
 		.sort(function(a, b) { return a.osd_counts - b.osd_counts; });
 
 	// TODO: Optional Filter - link it into panel
@@ -132,7 +137,8 @@ function createVisualization(json) {
 
 		// 3. Show a gradient of the node
 		//return rgbString(r,g,b);
-		return hslString(h, '70%', '50%');
+		return d3.hsl(h, 0.7, 0.5);
+
 	});
 
 	// Add the mouseleave handler to the bounding circle.
@@ -154,30 +160,22 @@ function createVisualization(json) {
  	// I Kinda don't like this logic very much...
  	// Let's fix it to parent-children model
  	// where you can enter the children at once, but can only exit the state by the parent
- 	if (p.depth > 1) {
- 		target = p.bZoomed ? p : ( p.children ? p : p.parent);
- 	} else {
+
+ 	
+ 	if (!prevTarget) {
+ 		// 1. In case of null pointer
+ 		target = p;
+ 	} else if (prevTarget == p && p.parent) {
+ 		// 2. Go back one level
+ 		target = p.parent;
+ 	} else{ 
+ 		// 3. Expand its child
  		target = p;
  	}
 
- 	if (target.bZoomed) {
+ 	prevTarget = target;
 
- 		delete target.bZoomed;
- 		target = oLastZoomed = aHistory.pop();
-
- 		if (!aHistory.length) {
- 			root.bHighlighted = true;
- 			target = oLastZoomed = root;
- 		}
-
- 	} else {
- 		target.bZoomed = true;
- 		if (oLastZoomed) {
- 			aHistory.push(oLastZoomed);
- 		}
- 		oLastZoomed = target;
- 	}
-
+ 	
  	// 1. Transition zoom in
 
  	root.each(function(d){

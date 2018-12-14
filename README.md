@@ -75,6 +75,13 @@ The brief logic of data processing is as follows:
    - (TODO) `total_crush_weight`: sum of `total_crush_weight` of children. Originated from the OSD's `crush_weight`
    - `type`: the type of itself. (maybe delete it? just more convenient,..)
 
+In this project we use the following dataset as our visaulize target:
+
+- `kelly.product.json`: about 4K+ line of code
+- `beesly.product.json`: about 7K+ line of code
+- `erin.product.json`: about 13k+ code
+- `jim.product.json`: about 2W+ code
+
 
 
 ### Visualization
@@ -91,8 +98,13 @@ Zoomable Sequence Sunburst is the model we target on. Specifically we will focus
 
 #### Important
 
-- [x] Zoomable pie chart
-- [x] Delay when move out from the focus
+- [x] Zoomable Funtionality of the pie chart
+  - [x] Zoom & unzoom logic
+  - [ ] Improve zoom&unzoom: store the parent-child path
+- [x] Animation Delay
+- [ ] Color
+  - [ ] Color schemes
+  - [ ] Gradient effect of the color
 - [x] Too much OSD show case
 - [x] Reasonable, selectable (changeable) color schemes (for different purpose)
   - [x] Hierachical path
@@ -101,17 +113,23 @@ Zoomable Sequence Sunburst is the model we target on. Specifically we will focus
   - [x] up/down information
   - [x] use gradient color to indicate failure
 - [ ] Animation Delay
-- [ ] A panel for selection of data
+  - [ ] Somehow significant delay using `beesly.product.json`
+- [ ] A panel for selection of features
+  - [ ] 
 
 #### Not so Urgent
 
 - [ ] Change File might change data location - Should find a way to update data with least change of element in webpage
 - [ ] Label each node (if possible, since we don't like the look..)
 
+#### Bugs
+
+- [ ] White lines when zoomed in (the white padding of the circle)
+
+
+
 
 
 ## Ideas
 
 [Sequence Ring](./themes/visit-sequence) and Zoomable Sunburst ([this](https://bl.ocks.org/vasturiano/12da9071095fbd4df434e60d52d2d58d), [this](https://beta.observablehq.com/@mbostock/d3-sunburst))
-
-[Treemap](http://mbostock.github.io/d3/talk/20111018/treemap.html)
