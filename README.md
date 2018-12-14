@@ -79,7 +79,7 @@ The brief logic of data processing is as follows:
 
 ### Visualization
 
-Zoomable Sequence Sunburst is the model we target on. Specifically we will focus on 
+Zoomable Sequence Sunburst is the model we target on. Specifically we will focus on
 
 - Location of a specific node (osd.12 is under `root->room2->rack3->row4->host5`)
 - Node health status in a hierachical view (`host5` has 30 osds, 3 of them are `down (red)`, 3 `out(gray)`, rest are healthy `green`)
@@ -96,7 +96,7 @@ Zoomable Sequence Sunburst is the model we target on. Specifically we will focus
 - [ ] Too much OSD show case
 - [x] Reasonable, selectable (changeable) color schemes (for different purpose)
   - [x] Hierachical path
-- [ ] Different information 
+- [ ] Different information
   - [ ] crush map weight
   - [ ] up/down information
 - [ ] Label each node (as much as possible)
@@ -112,7 +112,3 @@ Zoomable Sequence Sunburst is the model we target on. Specifically we will focus
 [Sequence Ring](./themes/visit-sequence) and Zoomable Sunburst ([this](https://bl.ocks.org/vasturiano/12da9071095fbd4df434e60d52d2d58d), [this](https://beta.observablehq.com/@mbostock/d3-sunburst))
 
 [Treemap](http://mbostock.github.io/d3/talk/20111018/treemap.html)
-
-
-
-

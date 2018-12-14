@@ -6,7 +6,7 @@ var height = 600 ;
 var radius = Math.min(width, height) / 2;
 
 
-// Breadcrumb dimensions: 
+// Breadcrumb dimensions:
 // width, height, spacing, width of tip/tail.
 var b = {
 	w: 120, h: 40, s: 3, t: 10
@@ -31,9 +31,9 @@ var osd_color = {
 };
 
 
-// @Define Total size of all segments; 
+// @Define Total size of all segments;
 // we set this later, after loading the data.
-var totalSize = 0; 
+var totalSize = 0;
 
 // @Define Last zoomed element
 var oLastZoomed = null;
@@ -69,6 +69,10 @@ function rgbString(r, g, b){
 	return "rgb" + "(" + String(r) + "," + String(g) + "," + String(b) + ")";
 }
 
+function hslString(h, s, l){
+	return `hsl(${h},${s},${l})`;
+}
+
 
 var root = null;
 // Main function to draw and set up the visualization, once we have the data.
@@ -91,7 +95,7 @@ function createVisualization(json) {
 	root = d3.hierarchy(json)
 		.sum(function(d) { return d.osd_counts; })
 		.sort(function(a, b) { return b.value - a.value; });
-		
+
 	// TODO: Optional Filter - link it into panel
 	var nodes = partition(root).descendants();
 
@@ -109,22 +113,22 @@ function createVisualization(json) {
 	path.on("click", click);
 
 	// TODO: Color for each piece
-	path.style("fill", function(d) { 
+	path.style("fill", function(d) {
 		var a = d.data;
 		var osd_counts = a.osd_counts;
 		var osd_health = a.osd_health;
 		if (isNaN(osd_counts) || isNaN(osd_health)) { return null; }
 
 		// 2. Show whether under this level there are node down
-		var fraction = (osd_health == osd_counts) ? 1 : 0;
-		var r = 200 * (1 - fraction);
-		var g = 200 * fraction;
-		var b = 0;
+
+		var fraction = osd_health / osd_counts;
+		var h = 120 * Math.pow(fraction, 30); // hue ranging from 0-120 (0 is standard red, 120 is standard green)
+		// Note: This is some really shitty code of getting the hue weight as fraction^30.
+		// Toggle this number to change gradient
 
 		// 3. Show a gradient of the node
-
-
-		return rgbString(r,g,b);
+		//return rgbString(r,g,b);
+		return hslString(h, '70%', '50%');
 	});
 
 	// Add the mouseleave handler to the bounding circle.
@@ -132,11 +136,11 @@ function createVisualization(json) {
 
 	// Get total size of the tree = value of root node from partition.
 	totalSize = path.datum().value;
-	
+
  };
 
 // TODO: Implement for transition
-// @Define manage the 
+// @Define manage the
 // - Transition of the elements
 // - History
  function click(p){
@@ -169,7 +173,7 @@ function createVisualization(json) {
 
  	// 1. Transition zoom in
 
- 	root.each(function(d){ 
+ 	root.each(function(d){
       d.target = {
         x0: Math.max(0, Math.min(1, (d.x0 - target.x0) / (target.x1 - target.x0))) * 2 * Math.PI,
         x1: Math.max(0, Math.min(1, (d.x1 - target.x0) / (target.x1 - target.x0))) * 2 * Math.PI,
@@ -177,7 +181,7 @@ function createVisualization(json) {
         // y0: Math.max(0, d.y0 - p.depth),
         y1: Math.max(0, d.y1 - target.y0)
         // y1: Math.max(0, d.y1 - p.depth)
-      }; 
+      };
     });
  	console.log("After Change", root);
 
@@ -193,7 +197,7 @@ function createVisualization(json) {
 		return 1;
 	})
 	.attrTween("d", d => () => arc(d.current));
-    
+
  }
 
 
@@ -211,7 +215,7 @@ function dataToString(item){
 	"status: " + String(data.status) + "\n";
 
 	}
-	return "id: " + String(data.id)   + "\n" + 
+	return "id: " + String(data.id)   + "\n" +
 			 "type: " + String(data.type) + "\n";
 }
 
@@ -219,7 +223,7 @@ function dataToString(item){
 // Fade all but the current sequence, and show it in the breadcrumb trail.
 function mouseover(d) {
 	var percentageString = dataToString(d.data);
-	
+
 	// TODO: Adjust size of sentence
 	fontSize = d.data.name.length > 10 ? "1.8em": "2.5em";
 
@@ -227,7 +231,7 @@ function mouseover(d) {
 			.text(d.data.name)
 			.style("text-align", "center")
 			.style("font-size", fontSize);
-			
+
 	d3.select("#percentage")
 			.text(percentageString)
 			.style("font-size", "10px");
@@ -298,7 +302,7 @@ function breadcrumbPoints(d, i) {
 		points.push(b.t + "," + (b.h / 2));
 	}
 	return points.join(" ");
-} 
+}
 
 // Update the breadcrumb trail to show the current sequence and percentage.
 // TODO: Change name `percentage` etc.
@@ -309,8 +313,8 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 	// Data join; key function combines name and depth (= position in sequence).
 	var trail = d3.select("#trail")
 		.selectAll("g")
-		.data(nodeArray, function(d) { 
-			return d.data.name + d.depth; 
+		.data(nodeArray, function(d) {
+			return d.data.name + d.depth;
 		});
 
 	// Remove exiting nodes.
@@ -321,8 +325,8 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 
 	entering.append("svg:polygon")
 		.attr("points", breadcrumbPoints)
-		.style("fill", function(d) { 
-			return type_color[d.data.data.type]; 
+		.style("fill", function(d) {
+			return type_color[d.data.data.type];
 		});
 
 	entering.append("svg:text")
@@ -370,10 +374,10 @@ function drawLegend() {
 		.attr("ry", li.r)
 		.attr("width", li.w)
 		.attr("height", li.h)
-		.style("fill", function(d) { 
-			return type_color[d.key]; 
+		.style("fill", function(d) {
+			return type_color[d.key];
 		});
-				
+
 
 	g.append("svg:text")
 		.attr("x", li.w / 2)
