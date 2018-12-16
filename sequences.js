@@ -52,27 +52,26 @@ var arc = d3.arc()
 	.startAngle(function(d) { return d.x0; })
 	.endAngle(function(d) { return d.x1; })
 	.padAngle(d => Math.min((d.x1 - d.x0) / 2, 0.005))
-  .padRadius(radius / 2)
+  	.padRadius(radius / 2)
 	.innerRadius(function(d) { return Math.sqrt(d.y0); })
 	.outerRadius(function(d) { return Math.sqrt(d.y1); });
+
 
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/kelly.product.json"
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
 url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
+
+jsonData = null; // async var
 d3.json(url, function(text){
+	jsonData = text;
 	createVisualization(text);
 });
 
-// Replace it by d3.rgb(r,g,b [, opacity])
-// function rgbString(r, g, b){
-// 	return "rgb" + "(" + String(r) + "," + String(g) + "," + String(b) + ")";
-// }
 
-// Replace it by d3.hsl(r,g,b [, opacity])
-// function hslString(h, s, l){
-// 	return `hsl(${h},${s},${l})`;
-// }
+function rebuild(){
+	createVisualization(text);
+}
 
 var root = null;
 
@@ -98,9 +97,11 @@ function createVisualization(json) {
 
 	root = d3.hierarchy(json)
 		// Forgive me for the magic numbers. It is 4am and my mind doesn't work right
-		// It's fine. We all have the desperation.
+		// #Mike: It's fine. We all have the desperation. But what is the reason of the line?
 		.sum(function(d) {
+			// OK I think here we have a data artifact
 			let magicNumber = 0.4;
+			// let magicNumber = 1;
 			return Math.pow(d.osd_counts, magicNumber); 
 		})
 		.sort(function(a, b) { return a.osd_counts - b.osd_counts; });
@@ -130,14 +131,29 @@ function createVisualization(json) {
 
 		// 2. Show whether under this level there are node down
 
+		// Some color functions
+		colorFunc = {
+			expFunc: function(c, x){ return Math.exp(x*c)/Math.exp(c); },
+			sigmoidFunc: function(c, x, threashold){
+				threashold = threashold == null? 6/8 : threashold;
+				return 1 / (1 + Math.exp(- c * (x - threashold)));
+			},
+		}
+		
 		var fraction = osd_health / osd_counts;
-		var h = 120 * Math.pow(fraction, 30); // hue ranging from 0-120 (0 is standard red, 120 is standard green)
-		// Note: This is some really shitty code of getting the hue weight as fraction^30.
-		// Toggle this number to change gradient
+		
+		var c = 30;
+		var basecolorval = colorFunc.expFunc(c, fraction);
 
-		// 3. Show a gradient of the node
+		// var c = 64;
+		// var basecolorval = colorFunc.sigmoidFunc(c, fraction, 0.5);
+		
+		var h = 120 * basecolorval; // hue ranging from 0-120 (0 is standard red, 120 is standard green)
+		
+		// 3. Construct a gradient of the node
 		//return rgbString(r,g,b);
-		return d3.hsl(h, 0.7, 0.5);
+
+		return d3.hsl(h, 0.80, 0.5, fraction == 1 ? 0.4: 1);
 
 	});
 
@@ -157,27 +173,20 @@ function createVisualization(json) {
 
  	let target;
 
- 	// I Kinda don't like this logic very much...
- 	// Let's fix it to parent-children model
- 	// where you can enter the children at once, but can only exit the state by the parent
-
- 	
  	if (!prevTarget) {
- 		// 1. In case of null pointer
- 		target = p;
+ 		target = p; 		// 1. Initialization: In case of null pointer
  	} else if (prevTarget == p && p.parent) {
- 		// 2. Go back one level
- 		target = p.parent;
- 	} else{ 
- 		// 3. Expand its child
- 		target = p;
+ 		target = p.parent;  // 2. Chosen the center node: Go back one level
+ 	} else if (!p.children){
+ 		target = p.parent;	// 3. Chosen an OSD: expand its parent
+ 	} else{  
+ 		target = p;         // 4. Chosen an internal node: Expand its child
  	}
 
  	prevTarget = target;
 
  	
- 	// 1. Transition zoom in
-
+ 	// 1. Transition zoom in 
  	root.each(function(d){
       d.target = {
         x0: Math.max(0, Math.min(1, (d.x0 - target.x0) / (target.x1 - target.x0))) * 2 * Math.PI,
@@ -188,7 +197,6 @@ function createVisualization(json) {
         // y1: Math.max(0, d.y1 - p.depth)
       };
     });
- 	console.log("After Change", root);
 
     const t = vis.transition().duration(300);
 
@@ -225,8 +233,13 @@ function dataToString(item){
 }
 
 
+
+
 // Fade all but the current sequence, and show it in the breadcrumb trail.
 function mouseover(d) {
+
+	// -- Change the information of container
+
 	var percentageString = dataToString(d.data);
 
 	// TODO: Adjust size of sentence
@@ -248,16 +261,45 @@ function mouseover(d) {
 	sequenceArray.shift(); // remove root node from the array
 	updateBreadcrumbs(sequenceArray, percentageString);
 
-	// Fade all the segments.
-	d3.selectAll("path")
-			.style("opacity", 0.3);
+
+	// -- Animation (global)
+
+	// Fade all the segments.			
+	d3.selectAll("path").style("opacity", 0.3);
 
 	// Then highlight only those that are an ancestor of the current segment.
 	vis.selectAll("path")
-			.filter(function(node) {
-				return (sequenceArray.indexOf(node) >= 0);
-	})
-	.style("opacity", 1);
+		.filter(function(node) {
+			return (sequenceArray.indexOf(node) >= 0);
+		})
+		.style("opacity", 1);
+
+	// -- Animation (local)
+
+	// var selectedPath = d3.select(this);
+	
+	// d.isMouseOver = true;
+	// d.colorString = selectedPath.style("fill");
+
+	// pulsate(selectedPath);
+	
+	// function pulsate(path){
+
+	// 	animate();
+
+	// 	function animate(){
+	// 		let originalColor = path.data()[0].colorString;
+	// 		if (selectedPath.data()[0].isMouseOver) {
+	// 			selectedPath.transition().delay(1000).duration(10).style("fill", "#FFF").ease(d3.easeCubic)
+	// 						.transition().delay(1000).duration(10).style("fill", originalColor).ease(d3.easeCubic)
+	// 						// .each("end", animate);
+	// 		}else{
+	// 			selectedPath.transition().duration(10).style("fill", originalColor);
+	// 		}
+	// 	}
+	// }
+
+
 }
 
 // Restore everything to full opacity when moving off the visualization.
@@ -276,11 +318,28 @@ function mouseleave(d) {
 		.duration(10)
 		.style("opacity", 1)
 		.on("end", function() {
-						d3.select(this).on("mouseover", mouseover);
-					});
+			d3.select(this).on("mouseover", mouseover);
+		});
 
 	d3.select("#explanation")
 		.style("visibility", "hidden");
+
+		var selectedPath = d3.select(this);
+	
+	// -- Animation (local)
+
+	// d.isMouseOver = false;
+	// d.colorString = selectedPath.style("fill");
+
+	// stopPulsate(selectedPath);
+	
+	// function stopPulsate(path){
+	// 	animate();
+	// 	function animate(){
+	// 		console.log(path);
+	// 		path.selectAll("*").interrupt();
+	// 	}
+	// }
 }
 
 function initializeBreadcrumbTrail() {
