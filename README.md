@@ -1,10 +1,18 @@
 # CS739 Final Project - OSD Hierarchy Visualization
 
-A simple visualization widget for OSD Hierarchical structure in Ceph.
+
+
+[TOC]
 
 
 
 ## Project Description
+
+Show OSD Hierarchical structure in Ceph cluster.
+
+
+
+## Project Detail
 
 ### Data Flow
 
@@ -84,6 +92,12 @@ In this project we use the following dataset as our visaulize target:
 
 
 
+#### Time Series Data
+
+
+
+
+
 ### Visualization
 
 Zoomable Sequence Sunburst is the model we target on. Specifically we will focus on
@@ -94,37 +108,33 @@ Zoomable Sequence Sunburst is the model we target on. Specifically we will focus
 
 
 
-## Changelog (12/7 update)
+
+
+## Changelog (12/14 update)
 
 #### Important
 
 - [x] Zoomable Funtionality of the pie chart
   - [x] Zoom & unzoom logic
   - [ ] Improve zoom&unzoom: store the parent-child path
-
 - [x] Animation Delay
-
 - [ ] Color
 
   - [ ] Color schemes
   - [ ] Gradient effect of the color
-
 - [x] Too much OSD show case
-
 - [x] Reasonable, selectable (changeable) color schemes (for different purpose)
 
   - [x] Hierachical path
-
 - [x] Different information
   - [x] crush map weight // currently based on osd_counts
   - [x] up/down information
   - [x] use gradient color to indicate failure
-
 - [ ] Animation Delay
 
   - [ ] Somehow significant delay using `beesly.product.json`
-
 - [ ] A panel for selection of features
+- [ ] Time Series
 
 
 #### Not so Urgent

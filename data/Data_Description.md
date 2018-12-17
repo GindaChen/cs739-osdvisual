@@ -1,11 +1,13 @@
 # Data Description
 
 
-## Sort by size
+## Basic Information
 - kelly.json:  (4k+ line of json)
 - jim.json:    (7k+)
 - erin.json:   (13k+)
 - beesly.json: (2w+)
+
+
 
 ## Types
 In total 5 types: 
@@ -19,3 +21,8 @@ In total 5 types:
 "type": "room",
 
 ```
+
+
+
+
+
