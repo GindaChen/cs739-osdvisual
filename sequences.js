@@ -59,8 +59,14 @@ var arc = d3.arc()
 
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/kelly.product.json"
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
-url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
+
+url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/kelly.timeseries.0.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/beesly.timeseries.0.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/erin.timeseries.0.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/jim.timeseries.0.json"
+
 
 jsonData = null; // async var
 d3.json(url, function(text){
