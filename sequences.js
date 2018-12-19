@@ -5,7 +5,7 @@
 function main(url){
 	d3.json(url, function(text){
 		if (!root) {
-			createVisualization(text);	
+			createVisualization(text);
 		}else{
 			updateVisualization(text);
 			// updateData(text);
@@ -29,7 +29,7 @@ function singleTestCase() {
 
 
 function multipleTestCase() {
-	a = [0,1,2,3,4,5,6,7,8,9]
+	a = [0]
 	a.map(function(d){
 		setTimeout(function(){
 			var dataurl = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/beesly.timeseries." + d +".json"
@@ -130,15 +130,14 @@ function createVisualization(json) {
 
  function updateVisualization(json){
  	root = d3.hierarchy(json)
-		// Forgive me for the magic numbers. It is 4am and my mind doesn't work right
-		// #Mike: It's fine. We all have the desperation. But what is the reason of the line?
 		.sum(function(d) {
 			// OK I think here we have a data artifact
 			let magicNumber = 0.4;
 			// let magicNumber = 1;
-			return Math.pow(d.osd_counts, magicNumber); 
+			return Math.pow(d.osd_counts, magicNumber);
 		})
 		.sort(function(a, b) { return a.osd_counts - b.osd_counts; });
+	if(!!!prevTarget) prevTarget = root;
 
 	// TODO: Optional Filter - link it into panel
 	var nodes = partition(root).descendants();
@@ -150,7 +149,7 @@ function createVisualization(json) {
 	path = vis.data([json]).selectAll("path")
 		.data(nodes)
 		.enter().append("svg:path")
-		.attr("display", function(d) { return d.depth ? null : "none"; })
+		.attr("display", function(d) { return d.depth-prevTarget.depth<6 && d.depth!=root.depth ? null: "none"; })
 		.attr("d", arc)
 		.attr("fill-rule", "evenodd")
 		.style("opacity", 1)
@@ -177,21 +176,21 @@ function createVisualization(json) {
 				return 1 / (1 + Math.exp(- c * (x - threashold)));
 			},
 		}
-		
+
 		var fraction = osd_health / osd_counts;
-		
+
 		var c = 30;
 		var basecolorval = colorFunc.expFunc(c, fraction);
 
 		// var c = 64;
 		// var basecolorval = colorFunc.sigmoidFunc(c, fraction, 0.5);
-		
+
 		var h = 120 * basecolorval; // hue ranging from 0-120 (0 is standard red, 120 is standard green)
-		
+
 		// 3. Construct a gradient of the node
 		//return rgbString(r,g,b);
 
-		return d3.hsl(h, 0.80, 0.5, fraction == 1 ? 0.4: 1);
+		return d3.hsl(h, 0.80, 0.5);
 		// return d3.hsl(h, 0.80, 0.5, fraction == 1 ? 0.4: 1);
 
 	});
@@ -221,13 +220,13 @@ function createVisualization(json) {
  		target = p.parent;  // 2. Chosen the center node: Go back one level
  	} else if (!p.children){
  		target = p.parent;	// 3. Chosen an OSD: expand its parent
- 	} else{  
+ 	} else{
  		target = p;         // 4. Chosen an internal node: Expand its child
  	}
 
  	prevTarget = target;
 
- 	// 1. Transition zoom in 
+ 	// 1. Transition zoom in
  	// TODO: Adjust x0 and x1
  	root.each(function(d){
       d.target = {
@@ -238,10 +237,10 @@ function createVisualization(json) {
       };
     });
 
- 	
-	t = vis.transition().duration(10);
 
-    d3.selectAll("path").transition(t)
+	// t = vis.selectAll("path").transition().duration(1000);
+	t = 1000;
+  vis.selectAll("path").transition().duration(t)
 	.tween("data", d => {
 		const i = d3.interpolate(d.current, d.target);
 		return t => d.current = i(t);
@@ -251,6 +250,9 @@ function createVisualization(json) {
 		if(d == target){ return 0; }
 		return 1;
 	})
+	.attr("display", function(d){
+		return d.depth-prevTarget.depth<6 && d.depth!=root.depth < 6 ? null: "none";
+	});
 
 }
 
@@ -311,10 +313,10 @@ function mouseover(d) {
 
 	// -- Animation (global)
 
-	// Fade all the segments.			
+	// Fade all the segments.
 	d3.selectAll("path").style("opacity", 0.3);
 
-	// If the selection is the current expanded element, 
+	// If the selection is the current expanded element,
 	// highlight its direct decendents
 	if (prevTarget == d) {
 		var haloDepth = prevTarget.depth + 1;
