@@ -149,7 +149,7 @@ function createVisualization(json) {
 	path = vis.data([json]).selectAll("path")
 		.data(nodes)
 		.enter().append("svg:path")
-		.attr("display", function(d) { return d.depth-prevTarget.depth<6 && d.depth!=root.depth ? null: "none"; })
+		.attr("display", function(d) { return d.depth-prevTarget.depth<6 && d.depth ? null: "none"; })
 		.attr("d", arc)
 		.attr("fill-rule", "evenodd")
 		.style("opacity", 1)
@@ -251,7 +251,7 @@ function createVisualization(json) {
 		return 1;
 	})
 	.attr("display", function(d){
-		return d.depth-prevTarget.depth<6 && d.depth!=root.depth < 6 ? null: "none";
+		return d.depth-prevTarget.depth<6 && d.depth ? null: "none";
 	});
 
 }
