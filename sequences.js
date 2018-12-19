@@ -39,8 +39,8 @@ function multipleTestCase() {
 	})
 }
 
-
-multipleTestCase()
+singleTestCase()
+// multipleTestCase()
 
 
 // @Define Dimensions of sunburst.
