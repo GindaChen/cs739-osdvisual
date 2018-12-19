@@ -15,22 +15,32 @@ function main(url){
 
 
 
-// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/kelly.product.json"
-// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
-// url2 = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
-// url2 = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
-// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
-
-url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/kelly.timeseries.0.json"
-url2 = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/kelly.timeseries.1.json"
-// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/kelly.timeseries.1.json"
-
-main(url)
-setTimeout(function(){
-	main(url2)
-} , 1000)
+url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/beesly.timeseries.0.json"
+url2 = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/beesly.timeseries.1.json"
 
 
+
+function singleTestCase() {
+	main(url)
+	setTimeout(function(){
+		main(url2)
+	} , 1000)
+}
+
+
+function multipleTestCase() {
+	a = [0,1,2,3,4,5,6,7,8,9]
+	a.map(function(d){
+		setTimeout(function(){
+			var dataurl = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/beesly.timeseries." + d +".json"
+			main(dataurl)
+		}, d * 1000)
+		return null;
+	})
+}
+
+
+multipleTestCase()
 
 
 // @Define Dimensions of sunburst.
