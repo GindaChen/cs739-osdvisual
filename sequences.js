@@ -9,10 +9,13 @@ function main(url){
 }
 
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/kelly.product.json"
-// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
-url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
+url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
 
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/erin.timeseries.0.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/kelly.timeseries.1.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/erin.timeseries.1.json"
 main(url)
 
 
@@ -73,8 +76,6 @@ var arc = d3.arc()
   	.padRadius(radius / 2)
 	.innerRadius(function(d) { return Math.sqrt(d.y0); })
 	.outerRadius(function(d) { return Math.sqrt(d.y1); });
-
-
 
 
 var root = null;
@@ -168,6 +169,10 @@ function createVisualization(json) {
 	// Get total size of the tree = value of root node from partition.
 	totalSize = path.datum().value;
 
+	// TODO: An elegant (black magic) solution
+	//  to avoid gliches of the first click option
+	click(root);
+
  };
 
 // TODO: Implement for transition
@@ -190,33 +195,32 @@ function createVisualization(json) {
 
  	prevTarget = target;
 
- 	
  	// 1. Transition zoom in 
+ 	// TODO: Adjust x0 and x1
  	root.each(function(d){
       d.target = {
       	x0: Math.max(0, Math.min(1, (d.x0 - target.x0) / (target.x1 - target.x0))) * 2 * Math.PI,
         x1: Math.max(0, Math.min(1, (d.x1 - target.x0) / (target.x1 - target.x0))) * 2 * Math.PI,
         y0: Math.max(0, d.y0 - target.y0),
-        // y0: Math.max(0, d.y0 - p.depth),
         y1: Math.max(0, d.y1 - target.y0)
-        // y1: Math.max(0, d.y1 - p.depth)
       };
     });
 
-    const t = vis.transition().duration(300);
+ 	
+	t = vis.transition().duration(300);
 
     d3.selectAll("path").transition(t)
 	.tween("data", d => {
 		const i = d3.interpolate(d.current, d.target);
 		return t => d.current = i(t);
 	})
+	.attrTween("d", d => () => arc(d.current))
 	.attr("fill-opacity", d => {
 		if(d == target){ return 0; }
 		return 1;
 	})
-	.attrTween("d", d => () => arc(d.current));
 
- }
+}
 
 
 // TODO: Ugly Code
@@ -278,12 +282,24 @@ function mouseover(d) {
 	// Fade all the segments.			
 	d3.selectAll("path").style("opacity", 0.3);
 
-	// Then highlight only those that are an ancestor of the current segment.
-	vis.selectAll("path")
+	// If the selection is the current expanded element, 
+	// highlight its direct decendents
+	if (prevTarget == d) {
+		var haloDepth = prevTarget.depth + 1;
+		vis.selectAll("path")
+		.filter(function(node) {
+			return (node.depth <= haloDepth);
+		})
+		.style("opacity", 1);
+	} else{
+		// If the selection is not the current expanded element,
+		// highlight only those that are an ancestor of the current segment.
+		vis.selectAll("path")
 		.filter(function(node) {
 			return (sequenceArray.indexOf(node) >= 0);
 		})
 		.style("opacity", 1);
+	}
 }
 
 // Restore everything to full opacity when moving off the visualization.
@@ -308,7 +324,6 @@ function mouseleave(d) {
 	d3.select("#explanation")
 		.style("visibility", "hidden");
 
-	
 }
 
 function initializeBreadcrumbTrail() {
