@@ -8,8 +8,12 @@
 }
 
 .nodes circle {
-  stroke: #fff;
+  stroke: #aaa;
   stroke-width: 1.5px;
+}
+
+.nodes text {
+  display: none;
 }
 
 text {
@@ -18,7 +22,7 @@ text {
 }
 
 </style>
-<svg width="960" height="600"></svg>
+<svg width="1920" height="1080"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -30,18 +34,47 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
-    .force("charge", d3.forceManyBody())
+    .force("charge", d3.forceManyBody().strength(function(d){
+      if(d.type == "osd"){
+        return -1;
+      }
+      else {
+        return -2;
+      }
+    }))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-d3.json("./dada/miserables.json", function(error, graph) {
+
+d3.json("https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/rawdata/jim.json", function(error, rawData) {
   if (error) throw error;
+
+  var graph = {nodes:[], links:[]};
+
+  rawData.nodes.concat(rawData.stray).forEach(function(node){
+    graph.nodes.push(node);
+    if(node.children){
+      node.children.forEach(function(child){
+        if(child > 0){
+          value = 1;
+        }
+        else{
+          value = 1;
+        }
+        graph.links.push({
+          source:node.id,
+          target:child,
+          value:value
+        });
+      });
+    }
+  });
 
   var link = svg.append("g")
       .attr("class", "links")
     .selectAll("line")
     .data(graph.links)
     .enter().append("line")
-      .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+      .attr("stroke-width", function(d) { return 1 });
 
   var node = svg.append("g")
       .attr("class", "nodes")
@@ -50,8 +83,25 @@ d3.json("./dada/miserables.json", function(error, graph) {
     .enter().append("g")
 
   var circles = node.append("circle")
-      .attr("r", 5)
-      .attr("fill", function(d) { return color(d.group); })
+      .attr("circle-device-id", function(d){return d.id;})
+      .attr("r", function(d){
+        if(d.type == "osd"){
+          return 5;
+        }
+        else{
+          return 5;
+        }
+      })
+      .attr("fill", function(d) {
+        if(d.type == "osd"){
+          return d.status=="up" ? "#0F0":"#F00";
+        }
+        else{
+          return "#AAA";
+        }
+      })
+      .on("mouseover", nodeMouseOver)
+      .on("mouseout", nodeMouseOut)
       .call(d3.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
@@ -59,10 +109,11 @@ d3.json("./dada/miserables.json", function(error, graph) {
 
   var lables = node.append("text")
       .text(function(d) {
-        return d.id;
+        return `${d.name} [${d.type}] ${d.status}`;
       })
       .attr('x', 6)
-      .attr('y', 3);
+      .attr('y', 3)
+      .attr('label-device-id', function(d){return d.id;});
 
   node.append("title")
       .text(function(d) { return d.id; });
@@ -87,6 +138,18 @@ d3.json("./dada/miserables.json", function(error, graph) {
         })
   }
 });
+
+function nodeMouseOver(){
+  d3.select(this).style("stroke", "#FFF")
+  var deviceId = d3.select(this).attr("circle-device-id");
+  d3.select("[label-device-id='" + deviceId + "']").style("display", "inline");
+}
+
+function nodeMouseOut(){
+  d3.select(this).style("stroke", "#aaa")
+  var deviceId = d3.select(this).attr("circle-device-id");
+  d3.select("[label-device-id='" + deviceId + "']").style("display", "none");
+}
 
 function dragstarted(d) {
   if (!d3.event.active) simulation.alphaTarget(0.3).restart();
