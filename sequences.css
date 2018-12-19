@@ -9,19 +9,20 @@ body {
 }
 
 #main {
-  float: left;
+  /*float: left;*/
   width: 750px;
 }
 
 #panel {
-  float: bottom;
+  /*float: bottom;*/
   width: 300px;
   height: 300px;
 }
 
 #sidebar {
   float: right;
-  width: 100px;
+  width: 200px;
+  margin-top: 100px;
 }
 
 #sequence {
@@ -57,7 +58,7 @@ body {
 }
 
 #DeviceName {
-  /*font-size:*/ 2.5em;
+  /*font-size: 2.5em; */
   font-size: 20px;
   /*display:block;*/
 }
