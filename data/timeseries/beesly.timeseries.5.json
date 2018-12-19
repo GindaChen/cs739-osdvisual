@@ -147,11 +147,11 @@
                 },
                 {
                   "name": "osd.959",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 959,
                     "device_class": "hdd",
@@ -162,7 +162,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -323,11 +323,11 @@
                 },
                 {
                   "name": "osd.948",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 948,
                     "device_class": "hdd",
@@ -338,7 +338,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -543,7 +543,7 @@
                 }
               ],
               "osd_counts": 24,
-              "osd_health": 2,
+              "osd_health": 0,
               "data": {
                 "id": -143,
                 "name": "p06253939y61826",
@@ -672,11 +672,11 @@
                 },
                 {
                   "name": "osd.774",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 774,
                     "device_class": "hdd",
@@ -687,7 +687,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -848,11 +848,11 @@
                 },
                 {
                   "name": "osd.546",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 546,
                     "device_class": "hdd",
@@ -863,7 +863,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -914,11 +914,11 @@
                 },
                 {
                   "name": "osd.510",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 510,
                     "device_class": "hdd",
@@ -929,7 +929,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -1112,7 +1112,7 @@
                 }
               ],
               "osd_counts": 24,
-              "osd_health": 3,
+              "osd_health": 0,
               "data": {
                 "id": -135,
                 "name": "p06253939y33049",
@@ -1153,11 +1153,11 @@
               "children": [
                 {
                   "name": "osd.830",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 830,
                     "device_class": "hdd",
@@ -1168,7 +1168,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -1263,11 +1263,11 @@
                 },
                 {
                   "name": "osd.825",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 825,
                     "device_class": "hdd",
@@ -1278,7 +1278,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -1483,11 +1483,11 @@
                 },
                 {
                   "name": "osd.812",
-                  "status": "down",
+                  "status": "up",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 0,
+                  "osd_health": 1,
                   "data": {
                     "id": 812,
                     "device_class": "hdd",
@@ -1498,7 +1498,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "down",
+                    "status": "up",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -1681,7 +1681,7 @@
                 }
               ],
               "osd_counts": 24,
-              "osd_health": 2,
+              "osd_health": 1,
               "data": {
                 "id": -139,
                 "name": "p06253939y31416",
@@ -1942,11 +1942,11 @@
                 },
                 {
                   "name": "osd.793",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 793,
                     "device_class": "hdd",
@@ -1957,18 +1957,18 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
                 },
                 {
                   "name": "osd.792",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 792,
                     "device_class": "hdd",
@@ -1979,18 +1979,18 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
                 },
                 {
                   "name": "osd.791",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 791,
                     "device_class": "hdd",
@@ -2001,18 +2001,18 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
                 },
                 {
                   "name": "osd.790",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 790,
                     "device_class": "hdd",
@@ -2023,7 +2023,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -2052,11 +2052,11 @@
                 },
                 {
                   "name": "osd.788",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 788,
                     "device_class": "hdd",
@@ -2067,7 +2067,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -2250,7 +2250,7 @@
                 }
               ],
               "osd_counts": 24,
-              "osd_health": 5,
+              "osd_health": 0,
               "data": {
                 "id": -137,
                 "name": "p06253939y22952",
@@ -2291,11 +2291,11 @@
               "children": [
                 {
                   "name": "osd.400",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 400,
                     "device_class": "hdd",
@@ -2306,18 +2306,18 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
                 },
                 {
                   "name": "osd.381",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 381,
                     "device_class": "hdd",
@@ -2328,7 +2328,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -2445,11 +2445,11 @@
                 },
                 {
                   "name": "osd.240",
-                  "status": "down",
+                  "status": "up",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 0,
+                  "osd_health": 1,
                   "data": {
                     "id": 240,
                     "device_class": "hdd",
@@ -2460,7 +2460,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "down",
+                    "status": "up",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -2511,11 +2511,11 @@
                 },
                 {
                   "name": "osd.211",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 211,
                     "device_class": "hdd",
@@ -2526,18 +2526,18 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
                 },
                 {
                   "name": "osd.205",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 205,
                     "device_class": "hdd",
@@ -2548,7 +2548,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -2753,11 +2753,11 @@
                 },
                 {
                   "name": "osd.78",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 78,
                     "device_class": "hdd",
@@ -2768,18 +2768,18 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
                 },
                 {
                   "name": "osd.70",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 70,
                     "device_class": "hdd",
@@ -2790,7 +2790,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -2819,7 +2819,7 @@
                 }
               ],
               "osd_counts": 24,
-              "osd_health": 6,
+              "osd_health": 1,
               "data": {
                 "id": -131,
                 "name": "p06253939f44928",
@@ -3124,11 +3124,11 @@
                 },
                 {
                   "name": "osd.889",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 889,
                     "device_class": "hdd",
@@ -3139,7 +3139,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -3322,11 +3322,11 @@
                 },
                 {
                   "name": "osd.872",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 872,
                     "device_class": "hdd",
@@ -3337,7 +3337,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -3388,7 +3388,7 @@
                 }
               ],
               "osd_counts": 24,
-              "osd_health": 2,
+              "osd_health": 0,
               "data": {
                 "id": -145,
                 "name": "p06253939e35392",
@@ -3495,11 +3495,11 @@
                 },
                 {
                   "name": "osd.857",
-                  "status": "down",
+                  "status": "up",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 0,
+                  "osd_health": 1,
                   "data": {
                     "id": 857,
                     "device_class": "hdd",
@@ -3510,7 +3510,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "down",
+                    "status": "up",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -3737,11 +3737,11 @@
                 },
                 {
                   "name": "osd.840",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 840,
                     "device_class": "hdd",
@@ -3752,7 +3752,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -3891,11 +3891,11 @@
                 },
                 {
                   "name": "osd.833",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 833,
                     "device_class": "hdd",
@@ -3906,7 +3906,7 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
@@ -3935,11 +3935,11 @@
                 },
                 {
                   "name": "osd.831",
-                  "status": "up",
+                  "status": "down",
                   "type": "osd",
                   "exists": 1,
                   "osd_counts": 1,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": 831,
                     "device_class": "hdd",
@@ -3950,14 +3950,14 @@
                     "depth": 3,
                     "pool_weights": {},
                     "exists": 1,
-                    "status": "up",
+                    "status": "down",
                     "reweight": 1.0,
                     "primary_affinity": 1.0
                   }
                 }
               ],
               "osd_counts": 24,
-              "osd_health": 4,
+              "osd_health": 2,
               "data": {
                 "id": -141,
                 "name": "p06253939e03866",
@@ -3994,7 +3994,7 @@
             }
           ],
           "osd_counts": 168,
-          "osd_health": 24,
+          "osd_health": 4,
           "data": {
             "id": -132,
             "name": "RA21",
@@ -4014,7 +4014,7 @@
         }
       ],
       "osd_counts": 168,
-      "osd_health": 24,
+      "osd_health": 4,
       "data": {
         "id": -92,
         "name": "drain",
@@ -4135,11 +4135,11 @@
                         },
                         {
                           "name": "osd.1204",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 1204,
                             "device_class": "hdd",
@@ -4150,7 +4150,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -4179,11 +4179,11 @@
                         },
                         {
                           "name": "osd.1175",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 1175,
                             "device_class": "hdd",
@@ -4194,18 +4194,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.1154",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 1154,
                             "device_class": "hdd",
@@ -4216,7 +4216,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -4421,11 +4421,11 @@
                         },
                         {
                           "name": "osd.1010",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 1010,
                             "device_class": "hdd",
@@ -4436,7 +4436,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -4634,11 +4634,11 @@
                         },
                         {
                           "name": "osd.1091",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 1091,
                             "device_class": "hdd",
@@ -4649,7 +4649,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -4766,11 +4766,11 @@
                         },
                         {
                           "name": "osd.1008",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 1008,
                             "device_class": "hdd",
@@ -4781,18 +4781,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.992",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 992,
                             "device_class": "hdd",
@@ -4803,7 +4803,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -4920,11 +4920,11 @@
                         },
                         {
                           "name": "osd.934",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 934,
                             "device_class": "hdd",
@@ -4935,7 +4935,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -4964,7 +4964,7 @@
                         }
                       ],
                       "osd_counts": 20,
-                      "osd_health": 3,
+                      "osd_health": 1,
                       "data": {
                         "id": -87,
                         "name": "p05798818b40951",
@@ -5001,11 +5001,11 @@
                       "children": [
                         {
                           "name": "osd.1133",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 1133,
                             "device_class": "hdd",
@@ -5016,7 +5016,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -5309,11 +5309,11 @@
                         },
                         {
                           "name": "osd.947",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 947,
                             "device_class": "hdd",
@@ -5324,7 +5324,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -5397,11 +5397,11 @@
                         },
                         {
                           "name": "osd.908",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 908,
                             "device_class": "hdd",
@@ -5412,7 +5412,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -5441,7 +5441,7 @@
                         }
                       ],
                       "osd_counts": 20,
-                      "osd_health": 2,
+                      "osd_health": 1,
                       "data": {
                         "id": -81,
                         "name": "p05798818b37327",
@@ -5478,11 +5478,11 @@
                       "children": [
                         {
                           "name": "osd.885",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 885,
                             "device_class": "hdd",
@@ -5493,7 +5493,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -5566,11 +5566,11 @@
                         },
                         {
                           "name": "osd.849",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 849,
                             "device_class": "hdd",
@@ -5581,7 +5581,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -5610,11 +5610,11 @@
                         },
                         {
                           "name": "osd.763",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 763,
                             "device_class": "hdd",
@@ -5625,7 +5625,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -5654,11 +5654,11 @@
                         },
                         {
                           "name": "osd.737",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 737,
                             "device_class": "hdd",
@@ -5669,7 +5669,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -5951,7 +5951,7 @@
                     }
                   ],
                   "osd_counts": 80,
-                  "osd_health": 9,
+                  "osd_health": 6,
                   "data": {
                     "id": -78,
                     "name": "BA12",
@@ -6130,11 +6130,11 @@
                         },
                         {
                           "name": "osd.730",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 730,
                             "device_class": "hdd",
@@ -6145,7 +6145,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -6416,7 +6416,7 @@
                         }
                       ],
                       "osd_counts": 20,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -74,
                         "name": "p05798818s98313",
@@ -6475,11 +6475,11 @@
                         },
                         {
                           "name": "osd.1141",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 1141,
                             "device_class": "hdd",
@@ -6490,7 +6490,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -6629,11 +6629,11 @@
                         },
                         {
                           "name": "osd.1029",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 1029,
                             "device_class": "hdd",
@@ -6644,7 +6644,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -6849,11 +6849,11 @@
                         },
                         {
                           "name": "osd.927",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 927,
                             "device_class": "hdd",
@@ -6864,18 +6864,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.912",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 912,
                             "device_class": "hdd",
@@ -6886,7 +6886,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -6952,11 +6952,11 @@
                         },
                         {
                           "name": "osd.735",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 735,
                             "device_class": "hdd",
@@ -6967,7 +6967,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -7370,7 +7370,7 @@
                         }
                       ],
                       "osd_counts": 20,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -85,
                         "name": "p05798818s49204",
@@ -7451,11 +7451,11 @@
                         },
                         {
                           "name": "osd.903",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 903,
                             "device_class": "hdd",
@@ -7466,7 +7466,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -7649,11 +7649,11 @@
                         },
                         {
                           "name": "osd.845",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 845,
                             "device_class": "hdd",
@@ -7664,18 +7664,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.764",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 764,
                             "device_class": "hdd",
@@ -7686,7 +7686,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -7847,7 +7847,7 @@
                         }
                       ],
                       "osd_counts": 20,
-                      "osd_health": 2,
+                      "osd_health": 1,
                       "data": {
                         "id": -89,
                         "name": "p05798818s40185",
@@ -7880,7 +7880,7 @@
                     }
                   ],
                   "osd_counts": 80,
-                  "osd_health": 6,
+                  "osd_health": 3,
                   "data": {
                     "id": -75,
                     "name": "BA11",
@@ -7897,7 +7897,7 @@
                 }
               ],
               "osd_counts": 160,
-              "osd_health": 15,
+              "osd_health": 9,
               "data": {
                 "id": -76,
                 "name": "S513-A-IP63",
@@ -7968,11 +7968,11 @@
                         },
                         {
                           "name": "osd.740",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 740,
                             "device_class": "hdd",
@@ -7983,7 +7983,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -8034,11 +8034,11 @@
                         },
                         {
                           "name": "osd.680",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 680,
                             "device_class": "hdd",
@@ -8049,7 +8049,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -8254,11 +8254,11 @@
                         },
                         {
                           "name": "osd.502",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 502,
                             "device_class": "hdd",
@@ -8269,7 +8269,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -8364,7 +8364,7 @@
                         }
                       ],
                       "osd_counts": 20,
-                      "osd_health": 4,
+                      "osd_health": 1,
                       "data": {
                         "id": -90,
                         "name": "p05798818w03166",
@@ -8511,11 +8511,11 @@
                         },
                         {
                           "name": "osd.983",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 983,
                             "device_class": "hdd",
@@ -8526,7 +8526,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -8555,11 +8555,11 @@
                         },
                         {
                           "name": "osd.967",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 967,
                             "device_class": "hdd",
@@ -8570,7 +8570,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -8709,11 +8709,11 @@
                         },
                         {
                           "name": "osd.900",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 900,
                             "device_class": "hdd",
@@ -8724,7 +8724,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -8841,7 +8841,7 @@
                         }
                       ],
                       "osd_counts": 20,
-                      "osd_health": 3,
+                      "osd_health": 0,
                       "data": {
                         "id": -88,
                         "name": "p05798818v64334",
@@ -8878,11 +8878,11 @@
                       "children": [
                         {
                           "name": "osd.851",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 851,
                             "device_class": "hdd",
@@ -8893,18 +8893,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.843",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 843,
                             "device_class": "hdd",
@@ -8915,7 +8915,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -9010,11 +9010,11 @@
                         },
                         {
                           "name": "osd.684",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 684,
                             "device_class": "hdd",
@@ -9025,18 +9025,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.667",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 667,
                             "device_class": "hdd",
@@ -9047,7 +9047,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -9142,11 +9142,11 @@
                         },
                         {
                           "name": "osd.592",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 592,
                             "device_class": "hdd",
@@ -9157,7 +9157,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -9318,7 +9318,7 @@
                         }
                       ],
                       "osd_counts": 20,
-                      "osd_health": 2,
+                      "osd_health": 3,
                       "data": {
                         "id": -91,
                         "name": "p05798818v51559",
@@ -9729,11 +9729,11 @@
                         },
                         {
                           "name": "osd.1020",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 1020,
                             "device_class": "hdd",
@@ -9744,7 +9744,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -9795,7 +9795,7 @@
                         }
                       ],
                       "osd_counts": 20,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -79,
                         "name": "p05798818v47100",
@@ -9828,7 +9828,7 @@
                     }
                   ],
                   "osd_counts": 80,
-                  "osd_health": 9,
+                  "osd_health": 5,
                   "data": {
                     "id": -80,
                     "name": "BA10",
@@ -9853,11 +9853,11 @@
                       "children": [
                         {
                           "name": "osd.711",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 711,
                             "device_class": "hdd",
@@ -9868,7 +9868,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -10227,11 +10227,11 @@
                         },
                         {
                           "name": "osd.456",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 456,
                             "device_class": "hdd",
@@ -10242,7 +10242,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -10293,7 +10293,7 @@
                         }
                       ],
                       "osd_counts": 20,
-                      "osd_health": 2,
+                      "osd_health": 0,
                       "data": {
                         "id": -86,
                         "name": "p05798818b04322",
@@ -10352,11 +10352,11 @@
                         },
                         {
                           "name": "osd.1022",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 1022,
                             "device_class": "hdd",
@@ -10367,18 +10367,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.1016",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 1016,
                             "device_class": "hdd",
@@ -10389,7 +10389,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -10616,11 +10616,11 @@
                         },
                         {
                           "name": "osd.898",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 898,
                             "device_class": "hdd",
@@ -10631,7 +10631,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -10726,11 +10726,11 @@
                         },
                         {
                           "name": "osd.875",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 875,
                             "device_class": "hdd",
@@ -10741,14 +10741,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 19,
-                      "osd_health": 4,
+                      "osd_health": 0,
                       "data": {
                         "id": -83,
                         "name": "p05798818b00174",
@@ -10894,11 +10894,11 @@
                         },
                         {
                           "name": "osd.437",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 437,
                             "device_class": "hdd",
@@ -10909,7 +10909,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -11026,11 +11026,11 @@
                         },
                         {
                           "name": "osd.429",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 429,
                             "device_class": "hdd",
@@ -11041,7 +11041,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -11180,11 +11180,11 @@
                         },
                         {
                           "name": "osd.415",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 415,
                             "device_class": "hdd",
@@ -11195,7 +11195,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -11224,7 +11224,7 @@
                         }
                       ],
                       "osd_counts": 20,
-                      "osd_health": 2,
+                      "osd_health": 1,
                       "data": {
                         "id": -73,
                         "name": "p05798818b00047",
@@ -11349,11 +11349,11 @@
                         },
                         {
                           "name": "osd.398",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 398,
                             "device_class": "hdd",
@@ -11364,18 +11364,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.397",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 397,
                             "device_class": "hdd",
@@ -11386,7 +11386,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -11734,7 +11734,7 @@
                     }
                   ],
                   "osd_counts": 79,
-                  "osd_health": 9,
+                  "osd_health": 2,
                   "data": {
                     "id": -70,
                     "name": "BA09",
@@ -11751,7 +11751,7 @@
                 }
               ],
               "osd_counts": 159,
-              "osd_health": 18,
+              "osd_health": 7,
               "data": {
                 "id": -71,
                 "name": "S513-A-IP38",
@@ -11766,7 +11766,7 @@
             }
           ],
           "osd_counts": 319,
-          "osd_health": 33,
+          "osd_health": 16,
           "data": {
             "id": -65,
             "name": "0513-R-0060",
@@ -11793,11 +11793,11 @@
                   "children": [
                     {
                       "name": "osd.758",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 758,
                         "device_class": "hdd",
@@ -11808,7 +11808,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -11881,11 +11881,11 @@
                     },
                     {
                       "name": "osd.708",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 708,
                         "device_class": "hdd",
@@ -11896,18 +11896,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.698",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 698,
                         "device_class": "hdd",
@@ -11918,7 +11918,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -12013,11 +12013,11 @@
                     },
                     {
                       "name": "osd.627",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 627,
                         "device_class": "hdd",
@@ -12028,18 +12028,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.618",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 618,
                         "device_class": "hdd",
@@ -12050,7 +12050,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -12299,7 +12299,7 @@
                     }
                   ],
                   "osd_counts": 23,
-                  "osd_health": 4,
+                  "osd_health": 1,
                   "data": {
                     "id": -18,
                     "name": "p06253939w86906",
@@ -12361,11 +12361,11 @@
                     },
                     {
                       "name": "osd.753",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 753,
                         "device_class": "hdd",
@@ -12376,18 +12376,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.745",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 745,
                         "device_class": "hdd",
@@ -12398,7 +12398,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -12537,11 +12537,11 @@
                     },
                     {
                       "name": "osd.665",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 665,
                         "device_class": "hdd",
@@ -12552,7 +12552,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -12669,11 +12669,11 @@
                     },
                     {
                       "name": "osd.295",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 295,
                         "device_class": "hdd",
@@ -12684,7 +12684,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -12779,11 +12779,11 @@
                     },
                     {
                       "name": "osd.164",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 164,
                         "device_class": "hdd",
@@ -12794,18 +12794,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.147",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 147,
                         "device_class": "hdd",
@@ -12816,7 +12816,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -12865,7 +12865,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 4,
+                  "osd_health": 2,
                   "data": {
                     "id": -33,
                     "name": "p06253939w66726",
@@ -13038,11 +13038,11 @@
                     },
                     {
                       "name": "osd.699",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 699,
                         "device_class": "hdd",
@@ -13053,7 +13053,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -13104,11 +13104,11 @@
                     },
                     {
                       "name": "osd.662",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 662,
                         "device_class": "hdd",
@@ -13119,18 +13119,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.626",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 626,
                         "device_class": "hdd",
@@ -13141,7 +13141,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -13258,11 +13258,11 @@
                     },
                     {
                       "name": "osd.294",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 294,
                         "device_class": "hdd",
@@ -13273,7 +13273,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -13368,11 +13368,11 @@
                     },
                     {
                       "name": "osd.156",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 156,
                         "device_class": "hdd",
@@ -13383,7 +13383,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -13433,7 +13433,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 5,
+                  "osd_health": 2,
                   "data": {
                     "id": -26,
                     "name": "p06253939v20205",
@@ -13584,11 +13584,11 @@
                     },
                     {
                       "name": "osd.707",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 707,
                         "device_class": "hdd",
@@ -13599,7 +13599,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -13914,11 +13914,11 @@
                     },
                     {
                       "name": "osd.177",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 177,
                         "device_class": "hdd",
@@ -13929,7 +13929,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -14002,7 +14002,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 2,
+                  "osd_health": 0,
                   "data": {
                     "id": -22,
                     "name": "p06253939h70655",
@@ -14373,11 +14373,11 @@
                     },
                     {
                       "name": "osd.318",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 318,
                         "device_class": "hdd",
@@ -14388,7 +14388,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -14461,11 +14461,11 @@
                     },
                     {
                       "name": "osd.226",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 226,
                         "device_class": "hdd",
@@ -14476,7 +14476,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -14634,11 +14634,11 @@
                     },
                     {
                       "name": "osd.743",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 743,
                         "device_class": "hdd",
@@ -14649,7 +14649,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -14722,11 +14722,11 @@
                     },
                     {
                       "name": "osd.702",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 702,
                         "device_class": "hdd",
@@ -14737,7 +14737,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -14854,11 +14854,11 @@
                     },
                     {
                       "name": "osd.619",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 619,
                         "device_class": "hdd",
@@ -14869,7 +14869,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -15118,7 +15118,7 @@
                     }
                   ],
                   "osd_counts": 23,
-                  "osd_health": 1,
+                  "osd_health": 2,
                   "data": {
                     "id": -30,
                     "name": "p06253939h08924",
@@ -15699,7 +15699,7 @@
                 }
               ],
               "osd_counts": 165,
-              "osd_health": 17,
+              "osd_health": 8,
               "data": {
                 "id": -14,
                 "name": "RA17",
@@ -15815,11 +15815,11 @@
                     },
                     {
                       "name": "osd.597",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 597,
                         "device_class": "hdd",
@@ -15830,7 +15830,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -15881,11 +15881,11 @@
                     },
                     {
                       "name": "osd.580",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 580,
                         "device_class": "hdd",
@@ -15896,7 +15896,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -15925,11 +15925,11 @@
                     },
                     {
                       "name": "osd.568",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 568,
                         "device_class": "hdd",
@@ -15940,7 +15940,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -16079,11 +16079,11 @@
                     },
                     {
                       "name": "osd.317",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 317,
                         "device_class": "hdd",
@@ -16094,7 +16094,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -16123,11 +16123,11 @@
                     },
                     {
                       "name": "osd.308",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 308,
                         "device_class": "hdd",
@@ -16138,7 +16138,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -16189,11 +16189,11 @@
                     },
                     {
                       "name": "osd.268",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 268,
                         "device_class": "hdd",
@@ -16204,7 +16204,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -16255,7 +16255,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 5,
+                  "osd_health": 1,
                   "data": {
                     "id": -8,
                     "name": "p06253939v15174",
@@ -16472,11 +16472,11 @@
                     },
                     {
                       "name": "osd.569",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 569,
                         "device_class": "hdd",
@@ -16487,7 +16487,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -16516,11 +16516,11 @@
                     },
                     {
                       "name": "osd.559",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 559,
                         "device_class": "hdd",
@@ -16531,7 +16531,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -16560,11 +16560,11 @@
                     },
                     {
                       "name": "osd.549",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 549,
                         "device_class": "hdd",
@@ -16575,7 +16575,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -16823,7 +16823,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 2,
+                  "osd_health": 3,
                   "data": {
                     "id": -32,
                     "name": "p06253939u19068",
@@ -16974,11 +16974,11 @@
                     },
                     {
                       "name": "osd.589",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 589,
                         "device_class": "hdd",
@@ -16989,7 +16989,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -17392,7 +17392,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 0,
+                  "osd_health": 1,
                   "data": {
                     "id": -31,
                     "name": "p06253939u05650",
@@ -17829,11 +17829,11 @@
                     },
                     {
                       "name": "osd.305",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 305,
                         "device_class": "hdd",
@@ -17844,7 +17844,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -17961,7 +17961,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 0,
+                  "osd_health": 1,
                   "data": {
                     "id": -10,
                     "name": "p06253939t51760",
@@ -18090,11 +18090,11 @@
                     },
                     {
                       "name": "osd.135",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 135,
                         "device_class": "hdd",
@@ -18105,7 +18105,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -18178,11 +18178,11 @@
                     },
                     {
                       "name": "osd.131",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 131,
                         "device_class": "hdd",
@@ -18193,7 +18193,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -18354,37 +18354,15 @@
                     },
                     {
                       "name": "osd.114",
-                      "status": "up",
-                      "type": "osd",
-                      "exists": 1,
-                      "osd_counts": 1,
-                      "osd_health": 1,
-                      "data": {
-                        "id": 114,
-                        "device_class": "hdd",
-                        "name": "osd.114",
-                        "type": "osd",
-                        "type_id": 0,
-                        "crush_weight": 5.459991,
-                        "depth": 4,
-                        "pool_weights": {},
-                        "exists": 1,
-                        "status": "up",
-                        "reweight": 1.0,
-                        "primary_affinity": 1.0
-                      }
-                    },
-                    {
-                      "name": "osd.113",
                       "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
                       "osd_health": 0,
                       "data": {
-                        "id": 113,
+                        "id": 114,
                         "device_class": "hdd",
-                        "name": "osd.113",
+                        "name": "osd.114",
                         "type": "osd",
                         "type_id": 0,
                         "crush_weight": 5.459991,
@@ -18397,12 +18375,34 @@
                       }
                     },
                     {
-                      "name": "osd.112",
+                      "name": "osd.113",
                       "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
                       "osd_health": 1,
+                      "data": {
+                        "id": 113,
+                        "device_class": "hdd",
+                        "name": "osd.113",
+                        "type": "osd",
+                        "type_id": 0,
+                        "crush_weight": 5.459991,
+                        "depth": 4,
+                        "pool_weights": {},
+                        "exists": 1,
+                        "status": "up",
+                        "reweight": 1.0,
+                        "primary_affinity": 1.0
+                      }
+                    },
+                    {
+                      "name": "osd.112",
+                      "status": "down",
+                      "type": "osd",
+                      "exists": 1,
+                      "osd_counts": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 112,
                         "device_class": "hdd",
@@ -18413,7 +18413,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -18530,7 +18530,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 3,
+                  "osd_health": 2,
                   "data": {
                     "id": -12,
                     "name": "p06253939d32308",
@@ -18791,11 +18791,11 @@
                     },
                     {
                       "name": "osd.82",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 82,
                         "device_class": "hdd",
@@ -18806,7 +18806,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -19099,7 +19099,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 0,
+                  "osd_health": 1,
                   "data": {
                     "id": -11,
                     "name": "p06253939b84659",
@@ -19136,7 +19136,7 @@
                 }
               ],
               "osd_counts": 144,
-              "osd_health": 10,
+              "osd_health": 9,
               "data": {
                 "id": -9,
                 "name": "RA13",
@@ -19427,11 +19427,11 @@
                     },
                     {
                       "name": "osd.182",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 182,
                         "device_class": "hdd",
@@ -19442,7 +19442,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -19603,11 +19603,11 @@
                     },
                     {
                       "name": "osd.55",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 55,
                         "device_class": "hdd",
@@ -19618,18 +19618,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.48",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 48,
                         "device_class": "hdd",
@@ -19640,7 +19640,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -19691,7 +19691,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 4,
+                  "osd_health": 1,
                   "data": {
                     "id": -27,
                     "name": "p06253939t11537",
@@ -19776,11 +19776,11 @@
                     },
                     {
                       "name": "osd.526",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 526,
                         "device_class": "hdd",
@@ -19791,7 +19791,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -19864,11 +19864,11 @@
                     },
                     {
                       "name": "osd.419",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 419,
                         "device_class": "hdd",
@@ -19879,7 +19879,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -19952,11 +19952,11 @@
                     },
                     {
                       "name": "osd.203",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 203,
                         "device_class": "hdd",
@@ -19967,18 +19967,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.186",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 186,
                         "device_class": "hdd",
@@ -19989,18 +19989,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.175",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 175,
                         "device_class": "hdd",
@@ -20011,7 +20011,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -20040,11 +20040,11 @@
                     },
                     {
                       "name": "osd.151",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 151,
                         "device_class": "hdd",
@@ -20055,7 +20055,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -20084,11 +20084,11 @@
                     },
                     {
                       "name": "osd.92",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 92,
                         "device_class": "hdd",
@@ -20099,7 +20099,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -20260,7 +20260,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 6,
+                  "osd_health": 1,
                   "data": {
                     "id": -5,
                     "name": "p06253939s90298",
@@ -20323,11 +20323,11 @@
                     },
                     {
                       "name": "osd.572",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 572,
                         "device_class": "hdd",
@@ -20338,7 +20338,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -20609,11 +20609,11 @@
                     },
                     {
                       "name": "osd.129",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 129,
                         "device_class": "hdd",
@@ -20624,7 +20624,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -20828,7 +20828,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 3,
+                  "osd_health": 1,
                   "data": {
                     "id": -19,
                     "name": "p06253939s09190",
@@ -20935,11 +20935,11 @@
                     },
                     {
                       "name": "osd.522",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 522,
                         "device_class": "hdd",
@@ -20950,18 +20950,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.497",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 497,
                         "device_class": "hdd",
@@ -20972,18 +20972,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.473",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 473,
                         "device_class": "hdd",
@@ -20994,7 +20994,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -21045,11 +21045,11 @@
                     },
                     {
                       "name": "osd.393",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 393,
                         "device_class": "hdd",
@@ -21060,7 +21060,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -21155,11 +21155,11 @@
                     },
                     {
                       "name": "osd.172",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 172,
                         "device_class": "hdd",
@@ -21170,7 +21170,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -21199,11 +21199,11 @@
                     },
                     {
                       "name": "osd.139",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 139,
                         "device_class": "hdd",
@@ -21214,18 +21214,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.123",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 123,
                         "device_class": "hdd",
@@ -21236,7 +21236,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -21353,11 +21353,11 @@
                     },
                     {
                       "name": "osd.33",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 33,
                         "device_class": "hdd",
@@ -21368,7 +21368,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -21397,7 +21397,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 7,
+                  "osd_health": 1,
                   "data": {
                     "id": -21,
                     "name": "p06253939j88835",
@@ -21460,11 +21460,11 @@
                     },
                     {
                       "name": "osd.1465",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1465,
                         "device_class": "hdd",
@@ -21475,7 +21475,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -21922,11 +21922,11 @@
                     },
                     {
                       "name": "osd.38",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 38,
                         "device_class": "hdd",
@@ -21937,7 +21937,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -21966,7 +21966,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 2,
+                  "osd_health": 0,
                   "data": {
                     "id": -20,
                     "name": "p06253939j44198",
@@ -22007,11 +22007,11 @@
                   "children": [
                     {
                       "name": "osd.1470",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1470,
                         "device_class": "hdd",
@@ -22022,7 +22022,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -22073,11 +22073,11 @@
                     },
                     {
                       "name": "osd.514",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 514,
                         "device_class": "hdd",
@@ -22088,7 +22088,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -22576,11 +22576,11 @@
                   "children": [
                     {
                       "name": "osd.1469",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1469,
                         "device_class": "hdd",
@@ -22591,7 +22591,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -22884,11 +22884,11 @@
                     },
                     {
                       "name": "osd.76",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 76,
                         "device_class": "hdd",
@@ -22899,7 +22899,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -22950,11 +22950,11 @@
                     },
                     {
                       "name": "osd.45",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 45,
                         "device_class": "hdd",
@@ -22965,7 +22965,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -23016,11 +23016,11 @@
                     },
                     {
                       "name": "osd.35",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 35,
                         "device_class": "hdd",
@@ -23031,7 +23031,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -23060,11 +23060,11 @@
                     },
                     {
                       "name": "osd.16",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 16,
                         "device_class": "hdd",
@@ -23075,7 +23075,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -23104,7 +23104,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 3,
+                  "osd_health": 2,
                   "data": {
                     "id": -28,
                     "name": "p06253939h94144",
@@ -23141,7 +23141,7 @@
                 }
               ],
               "osd_counts": 168,
-              "osd_health": 26,
+              "osd_health": 7,
               "data": {
                 "id": -6,
                 "name": "RA09",
@@ -23301,11 +23301,11 @@
                     },
                     {
                       "name": "osd.1415",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1415,
                         "device_class": "hdd",
@@ -23316,7 +23316,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -23367,11 +23367,11 @@
                     },
                     {
                       "name": "osd.547",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 547,
                         "device_class": "hdd",
@@ -23382,7 +23382,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -23499,11 +23499,11 @@
                     },
                     {
                       "name": "osd.348",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 348,
                         "device_class": "hdd",
@@ -23514,7 +23514,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -23565,11 +23565,11 @@
                     },
                     {
                       "name": "osd.244",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 244,
                         "device_class": "hdd",
@@ -23580,7 +23580,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -23653,11 +23653,11 @@
                     },
                     {
                       "name": "osd.13",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 13,
                         "device_class": "hdd",
@@ -23668,7 +23668,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -23697,7 +23697,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 5,
+                  "osd_health": 2,
                   "data": {
                     "id": -23,
                     "name": "p06253939q80582",
@@ -23804,11 +23804,11 @@
                     },
                     {
                       "name": "osd.1427",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1427,
                         "device_class": "hdd",
@@ -23819,7 +23819,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -23980,11 +23980,11 @@
                     },
                     {
                       "name": "osd.448",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 448,
                         "device_class": "hdd",
@@ -23995,18 +23995,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.425",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 425,
                         "device_class": "hdd",
@@ -24017,7 +24017,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -24266,7 +24266,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 3,
+                  "osd_health": 0,
                   "data": {
                     "id": -17,
                     "name": "p06253939q78941",
@@ -24769,11 +24769,11 @@
                     },
                     {
                       "name": "osd.17",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 17,
                         "device_class": "hdd",
@@ -24784,18 +24784,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.9",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 9,
                         "device_class": "hdd",
@@ -24806,7 +24806,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -24920,11 +24920,11 @@
                     },
                     {
                       "name": "osd.1446",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 1446,
                         "device_class": "hdd",
@@ -24935,7 +24935,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -25030,11 +25030,11 @@
                     },
                     {
                       "name": "osd.1404",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1404,
                         "device_class": "hdd",
@@ -25045,18 +25045,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.1398",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1398,
                         "device_class": "hdd",
@@ -25067,18 +25067,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.544",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 544,
                         "device_class": "hdd",
@@ -25089,7 +25089,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -25360,11 +25360,11 @@
                     },
                     {
                       "name": "osd.18",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 18,
                         "device_class": "hdd",
@@ -25375,7 +25375,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -25404,7 +25404,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 4,
+                  "osd_health": 1,
                   "data": {
                     "id": -25,
                     "name": "p06253939q54121",
@@ -25511,11 +25511,11 @@
                     },
                     {
                       "name": "osd.1433",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1433,
                         "device_class": "hdd",
@@ -25526,7 +25526,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -25643,11 +25643,11 @@
                     },
                     {
                       "name": "osd.537",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 537,
                         "device_class": "hdd",
@@ -25658,18 +25658,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.504",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 504,
                         "device_class": "hdd",
@@ -25680,7 +25680,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -25973,7 +25973,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 3,
+                  "osd_health": 0,
                   "data": {
                     "id": -16,
                     "name": "p06253939m58066",
@@ -26014,11 +26014,11 @@
                   "children": [
                     {
                       "name": "osd.1462",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1462,
                         "device_class": "hdd",
@@ -26029,7 +26029,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -26102,11 +26102,11 @@
                     },
                     {
                       "name": "osd.1432",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1432,
                         "device_class": "hdd",
@@ -26117,7 +26117,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -26212,11 +26212,11 @@
                     },
                     {
                       "name": "osd.548",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 548,
                         "device_class": "hdd",
@@ -26227,7 +26227,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -26498,11 +26498,11 @@
                     },
                     {
                       "name": "osd.11",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 11,
                         "device_class": "hdd",
@@ -26513,7 +26513,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -26542,7 +26542,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 4,
+                  "osd_health": 2,
                   "data": {
                     "id": -15,
                     "name": "p06253939k59926",
@@ -26649,11 +26649,11 @@
                     },
                     {
                       "name": "osd.1437",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1437,
                         "device_class": "hdd",
@@ -26664,7 +26664,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -26693,11 +26693,11 @@
                     },
                     {
                       "name": "osd.1420",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 1420,
                         "device_class": "hdd",
@@ -26708,7 +26708,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -26825,11 +26825,11 @@
                     },
                     {
                       "name": "osd.499",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 499,
                         "device_class": "hdd",
@@ -26840,7 +26840,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -26979,11 +26979,11 @@
                     },
                     {
                       "name": "osd.235",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 235,
                         "device_class": "hdd",
@@ -26994,7 +26994,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -27111,7 +27111,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 3,
+                  "osd_health": 1,
                   "data": {
                     "id": -24,
                     "name": "p06253939k24239",
@@ -27148,7 +27148,7 @@
                 }
               ],
               "osd_counts": 168,
-              "osd_health": 23,
+              "osd_health": 7,
               "data": {
                 "id": -4,
                 "name": "RA05",
@@ -27286,11 +27286,11 @@
                     },
                     {
                       "name": "osd.1338",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 1338,
                         "device_class": "hdd",
@@ -27301,7 +27301,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -27352,11 +27352,11 @@
                     },
                     {
                       "name": "osd.1321",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1321,
                         "device_class": "hdd",
@@ -27367,7 +27367,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -27396,11 +27396,11 @@
                     },
                     {
                       "name": "osd.1310",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1310,
                         "device_class": "hdd",
@@ -27411,7 +27411,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -27528,11 +27528,11 @@
                     },
                     {
                       "name": "osd.1282",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1282,
                         "device_class": "hdd",
@@ -27543,7 +27543,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -27572,11 +27572,11 @@
                     },
                     {
                       "name": "osd.1271",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1271,
                         "device_class": "hdd",
@@ -27587,18 +27587,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 0.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.1266",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 1266,
                         "device_class": "hdd",
@@ -27609,7 +27609,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -27660,11 +27660,11 @@
                     },
                     {
                       "name": "osd.1250",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1250,
                         "device_class": "hdd",
@@ -27675,14 +27675,14 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     }
                   ],
                   "osd_counts": 23,
-                  "osd_health": 5,
+                  "osd_health": 2,
                   "data": {
                     "id": -94,
                     "name": "p06253939r98663",
@@ -27722,11 +27722,11 @@
                   "children": [
                     {
                       "name": "osd.1368",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1368,
                         "device_class": "hdd",
@@ -27737,7 +27737,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -27766,11 +27766,11 @@
                     },
                     {
                       "name": "osd.1357",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 1357,
                         "device_class": "hdd",
@@ -27781,7 +27781,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -28206,11 +28206,11 @@
                     },
                     {
                       "name": "osd.1256",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 1256,
                         "device_class": "hdd",
@@ -28221,7 +28221,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -28250,7 +28250,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 1,
+                  "osd_health": 2,
                   "data": {
                     "id": -97,
                     "name": "p06253939r76848",
@@ -28709,11 +28709,11 @@
                     },
                     {
                       "name": "osd.1272",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1272,
                         "device_class": "hdd",
@@ -28724,7 +28724,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -28819,7 +28819,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": -93,
                     "name": "p06253939r35735",
@@ -29058,11 +29058,11 @@
                     },
                     {
                       "name": "osd.1322",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 1322,
                         "device_class": "hdd",
@@ -29073,18 +29073,18 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
                     },
                     {
                       "name": "osd.1315",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1315,
                         "device_class": "hdd",
@@ -29095,7 +29095,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -29234,11 +29234,11 @@
                     },
                     {
                       "name": "osd.1281",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 1281,
                         "device_class": "hdd",
@@ -29249,7 +29249,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -29366,11 +29366,11 @@
                     },
                     {
                       "name": "osd.1249",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1249,
                         "device_class": "hdd",
@@ -29381,7 +29381,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -29671,11 +29671,11 @@
                     },
                     {
                       "name": "osd.1380",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1380,
                         "device_class": "hdd",
@@ -29686,7 +29686,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -29957,7 +29957,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 1,
+                  "osd_health": 0,
                   "data": {
                     "id": -98,
                     "name": "p06253939p44623",
@@ -30218,11 +30218,11 @@
                     },
                     {
                       "name": "osd.1314",
-                      "status": "up",
+                      "status": "down",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": 1314,
                         "device_class": "hdd",
@@ -30233,7 +30233,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "up",
+                        "status": "down",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -30350,11 +30350,11 @@
                     },
                     {
                       "name": "osd.1284",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 1284,
                         "device_class": "hdd",
@@ -30365,7 +30365,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -30460,11 +30460,11 @@
                     },
                     {
                       "name": "osd.1258",
-                      "status": "down",
+                      "status": "up",
                       "type": "osd",
                       "exists": 1,
                       "osd_counts": 1,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": 1258,
                         "device_class": "hdd",
@@ -30475,7 +30475,7 @@
                         "depth": 4,
                         "pool_weights": {},
                         "exists": 1,
-                        "status": "down",
+                        "status": "up",
                         "reweight": 1.0,
                         "primary_affinity": 1.0
                       }
@@ -30526,7 +30526,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 1,
+                  "osd_health": 2,
                   "data": {
                     "id": -96,
                     "name": "p06253939n66715",
@@ -31132,7 +31132,7 @@
                 }
               ],
               "osd_counts": 167,
-              "osd_health": 11,
+              "osd_health": 8,
               "data": {
                 "id": -72,
                 "name": "RA01",
@@ -31152,7 +31152,7 @@
             }
           ],
           "osd_counts": 812,
-          "osd_health": 87,
+          "osd_health": 39,
           "data": {
             "id": -2,
             "name": "0513-R-0050",
@@ -31170,7 +31170,7 @@
         }
       ],
       "osd_counts": 1131,
-      "osd_health": 120,
+      "osd_health": 55,
       "data": {
         "id": -1,
         "name": "default",

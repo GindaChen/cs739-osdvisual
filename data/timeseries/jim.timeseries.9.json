@@ -408,11 +408,11 @@
                         },
                         {
                           "name": "osd.177",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 177,
                             "device_class": "ssd",
@@ -423,7 +423,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -452,7 +452,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -121,
                         "name": "hpc-be127",
@@ -516,11 +516,11 @@
                         },
                         {
                           "name": "osd.26",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 26,
                             "device_class": "ssd",
@@ -531,14 +531,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 0.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -53,
                         "name": "hpc-be125",
@@ -924,11 +924,11 @@
                         },
                         {
                           "name": "osd.163",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 163,
                             "device_class": "ssd",
@@ -939,7 +939,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -968,7 +968,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -85,
                         "name": "hpc-be083",
@@ -988,11 +988,11 @@
                       "children": [
                         {
                           "name": "osd.295",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 295,
                             "device_class": "ssd",
@@ -1003,7 +1003,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -1054,7 +1054,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -25,
                         "name": "hpc-be068",
@@ -1074,11 +1074,11 @@
                       "children": [
                         {
                           "name": "osd.307",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 307,
                             "device_class": "ssd",
@@ -1089,7 +1089,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -1140,7 +1140,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -23,
                         "name": "hpc-be060",
@@ -1160,11 +1160,11 @@
                       "children": [
                         {
                           "name": "osd.283",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 283,
                             "device_class": "ssd",
@@ -1175,7 +1175,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 0.0,
                             "primary_affinity": 1.0
                           }
@@ -1226,7 +1226,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -19,
                         "name": "hpc-be057",
@@ -1440,11 +1440,11 @@
                         },
                         {
                           "name": "osd.75",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 75,
                             "device_class": "ssd",
@@ -1455,7 +1455,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -1484,7 +1484,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -233,
                         "name": "hpc-be029",
@@ -1504,11 +1504,11 @@
                       "children": [
                         {
                           "name": "osd.477",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 477,
                             "device_class": "ssd",
@@ -1519,7 +1519,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -1570,7 +1570,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -237,
                         "name": "hpc-be027",
@@ -1672,7 +1672,7 @@
                     }
                   ],
                   "osd_counts": 48,
-                  "osd_health": 3,
+                  "osd_health": 5,
                   "data": {
                     "id": -20,
                     "name": "SX15",
@@ -1881,11 +1881,11 @@
                       "children": [
                         {
                           "name": "osd.263",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 263,
                             "device_class": "ssd",
@@ -1896,7 +1896,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -1947,7 +1947,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -45,
                         "name": "hpc-be121",
@@ -1989,11 +1989,11 @@
                         },
                         {
                           "name": "osd.190",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 190,
                             "device_class": "ssd",
@@ -2004,7 +2004,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -2033,7 +2033,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -123,
                         "name": "hpc-be118",
@@ -2311,11 +2311,11 @@
                       "children": [
                         {
                           "name": "osd.272",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 272,
                             "device_class": "ssd",
@@ -2326,7 +2326,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -2355,11 +2355,11 @@
                         },
                         {
                           "name": "osd.22",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 22,
                             "device_class": "ssd",
@@ -2370,7 +2370,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -2527,11 +2527,11 @@
                         },
                         {
                           "name": "osd.58",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 58,
                             "device_class": "ssd",
@@ -2542,14 +2542,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -97,
                         "name": "hpc-be052",
@@ -2741,11 +2741,11 @@
                       "children": [
                         {
                           "name": "osd.436",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 436,
                             "device_class": "ssd",
@@ -2756,7 +2756,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -2807,7 +2807,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -241,
                         "name": "hpc-be038",
@@ -2957,11 +2957,11 @@
                         },
                         {
                           "name": "osd.196",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 196,
                             "device_class": "ssd",
@@ -2972,14 +2972,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -235,
                         "name": "hpc-be010",
@@ -3081,7 +3081,7 @@
                     }
                   ],
                   "osd_counts": 48,
-                  "osd_health": 4,
+                  "osd_health": 3,
                   "data": {
                     "id": -28,
                     "name": "SX14",
@@ -3118,11 +3118,11 @@
                       "children": [
                         {
                           "name": "osd.276",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 276,
                             "device_class": "ssd",
@@ -3133,18 +3133,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.133",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 133,
                             "device_class": "ssd",
@@ -3155,18 +3155,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.14",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 14,
                             "device_class": "ssd",
@@ -3177,14 +3177,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 2,
                       "data": {
                         "id": -105,
                         "name": "hpc-be138",
@@ -3484,11 +3484,11 @@
                         },
                         {
                           "name": "osd.173",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 173,
                             "device_class": "ssd",
@@ -3499,7 +3499,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -3528,7 +3528,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -83,
                         "name": "hpc-be114",
@@ -3764,11 +3764,11 @@
                         },
                         {
                           "name": "osd.39",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 39,
                             "device_class": "ssd",
@@ -3779,14 +3779,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -99,
                         "name": "hpc-be089",
@@ -3828,11 +3828,11 @@
                         },
                         {
                           "name": "osd.149",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 149,
                             "device_class": "ssd",
@@ -3843,7 +3843,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -3872,7 +3872,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -73,
                         "name": "hpc-be082",
@@ -4064,11 +4064,11 @@
                       "children": [
                         {
                           "name": "osd.309",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 309,
                             "device_class": "ssd",
@@ -4079,7 +4079,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -4130,7 +4130,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -93,
                         "name": "hpc-be065",
@@ -4172,11 +4172,11 @@
                         },
                         {
                           "name": "osd.150",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 150,
                             "device_class": "ssd",
@@ -4187,7 +4187,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -4216,7 +4216,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -113,
                         "name": "hpc-be062",
@@ -4430,11 +4430,11 @@
                         },
                         {
                           "name": "osd.191",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 191,
                             "device_class": "ssd",
@@ -4445,7 +4445,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -4474,7 +4474,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -31,
                         "name": "hpc-be046",
@@ -4490,7 +4490,7 @@
                     }
                   ],
                   "osd_counts": 48,
-                  "osd_health": 6,
+                  "osd_health": 3,
                   "data": {
                     "id": -16,
                     "name": "SX13",
@@ -5522,11 +5522,11 @@
                         },
                         {
                           "name": "osd.165",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 165,
                             "device_class": "ssd",
@@ -5537,7 +5537,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -5566,7 +5566,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -91,
                         "name": "hpc-be111",
@@ -5952,11 +5952,11 @@
                         },
                         {
                           "name": "osd.91",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 91,
                             "device_class": "ssd",
@@ -5967,7 +5967,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -5996,7 +5996,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -283,
                         "name": "hpc-be066",
@@ -6012,7 +6012,7 @@
                     }
                   ],
                   "osd_counts": 21,
-                  "osd_health": 2,
+                  "osd_health": 0,
                   "data": {
                     "id": -36,
                     "name": "SX11",
@@ -6032,7 +6032,7 @@
                 }
               ],
               "osd_counts": 195,
-              "osd_health": 16,
+              "osd_health": 12,
               "data": {
                 "id": -302,
                 "name": "SX",
@@ -6062,11 +6062,11 @@
                       "children": [
                         {
                           "name": "osd.324",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 324,
                             "device_class": "ssd",
@@ -6077,7 +6077,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -6128,7 +6128,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -201,
                         "name": "hpc-be142",
@@ -6234,11 +6234,11 @@
                       "children": [
                         {
                           "name": "osd.341",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 341,
                             "device_class": "ssd",
@@ -6249,7 +6249,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -6300,7 +6300,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -219,
                         "name": "hpc-be140",
@@ -6428,11 +6428,11 @@
                         },
                         {
                           "name": "osd.403",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 403,
                             "device_class": "ssd",
@@ -6443,7 +6443,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -6472,7 +6472,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -267,
                         "name": "hpc-be035",
@@ -6492,11 +6492,11 @@
                       "children": [
                         {
                           "name": "osd.495",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 495,
                             "device_class": "ssd",
@@ -6507,7 +6507,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 0.0,
                             "primary_affinity": 1.0
                           }
@@ -6536,11 +6536,11 @@
                         },
                         {
                           "name": "osd.376",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 376,
                             "device_class": "ssd",
@@ -6551,14 +6551,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 0.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 2,
+                      "osd_health": 0,
                       "data": {
                         "id": -253,
                         "name": "hpc-be026",
@@ -6794,11 +6794,11 @@
                         },
                         {
                           "name": "osd.409",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 409,
                             "device_class": "ssd",
@@ -6809,14 +6809,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -259,
                         "name": "hpc-be022",
@@ -6880,11 +6880,11 @@
                         },
                         {
                           "name": "osd.69",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 69,
                             "device_class": "ssd",
@@ -6895,14 +6895,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -291,
                         "name": "hpc-be017",
@@ -7138,11 +7138,11 @@
                         },
                         {
                           "name": "osd.66",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 66,
                             "device_class": "ssd",
@@ -7153,14 +7153,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -293,
                         "name": "hpc-be006",
@@ -7262,7 +7262,7 @@
                     }
                   ],
                   "osd_counts": 42,
-                  "osd_health": 6,
+                  "osd_health": 2,
                   "data": {
                     "id": -4,
                     "name": "SW15",
@@ -7319,11 +7319,11 @@
                         },
                         {
                           "name": "osd.244",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 244,
                             "device_class": "ssd",
@@ -7334,18 +7334,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.92",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 92,
                             "device_class": "ssd",
@@ -7356,14 +7356,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 2,
+                      "osd_health": 0,
                       "data": {
                         "id": -149,
                         "name": "hpc-be139",
@@ -7771,11 +7771,11 @@
                         },
                         {
                           "name": "osd.78",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 78,
                             "device_class": "ssd",
@@ -7786,14 +7786,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -125,
                         "name": "hpc-be109",
@@ -8071,11 +8071,11 @@
                       "children": [
                         {
                           "name": "osd.353",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 353,
                             "device_class": "ssd",
@@ -8086,18 +8086,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.208",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 208,
                             "device_class": "ssd",
@@ -8108,7 +8108,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -8137,7 +8137,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 2,
+                      "osd_health": 0,
                       "data": {
                         "id": -223,
                         "name": "hpc-be051",
@@ -8373,11 +8373,11 @@
                         },
                         {
                           "name": "osd.371",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 371,
                             "device_class": "ssd",
@@ -8388,14 +8388,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -263,
                         "name": "hpc-be021",
@@ -8587,11 +8587,11 @@
                       "children": [
                         {
                           "name": "osd.509",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 509,
                             "device_class": "ssd",
@@ -8602,7 +8602,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -8653,7 +8653,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -251,
                         "name": "hpc-be013",
@@ -8669,7 +8669,7 @@
                     }
                   ],
                   "osd_counts": 48,
-                  "osd_health": 5,
+                  "osd_health": 2,
                   "data": {
                     "id": -126,
                     "name": "SW14",
@@ -8750,11 +8750,11 @@
                         },
                         {
                           "name": "osd.114",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 114,
                             "device_class": "ssd",
@@ -8765,14 +8765,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -181,
                         "name": "hpc-be136",
@@ -8964,11 +8964,11 @@
                       "children": [
                         {
                           "name": "osd.379",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 379,
                             "device_class": "ssd",
@@ -8979,18 +8979,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.220",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 220,
                             "device_class": "ssd",
@@ -9001,7 +9001,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -9030,7 +9030,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 2,
+                      "osd_health": 0,
                       "data": {
                         "id": -139,
                         "name": "hpc-be106",
@@ -9050,11 +9050,11 @@
                       "children": [
                         {
                           "name": "osd.380",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 380,
                             "device_class": "ssd",
@@ -9065,7 +9065,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -9116,7 +9116,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -203,
                         "name": "hpc-be103",
@@ -9222,11 +9222,11 @@
                       "children": [
                         {
                           "name": "osd.365",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 365,
                             "device_class": "ssd",
@@ -9237,7 +9237,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -9288,7 +9288,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -195,
                         "name": "hpc-be087",
@@ -9992,7 +9992,7 @@
                     }
                   ],
                   "osd_counts": 45,
-                  "osd_health": 5,
+                  "osd_health": 0,
                   "data": {
                     "id": -140,
                     "name": "SW13",
@@ -10050,11 +10050,11 @@
                         },
                         {
                           "name": "osd.207",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 207,
                             "device_class": "ssd",
@@ -10065,7 +10065,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -10094,7 +10094,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -183,
                         "name": "hpc-be135",
@@ -10222,11 +10222,11 @@
                         },
                         {
                           "name": "osd.202",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 202,
                             "device_class": "ssd",
@@ -10237,7 +10237,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -10266,7 +10266,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -207,
                         "name": "hpc-be116",
@@ -10330,11 +10330,11 @@
                         },
                         {
                           "name": "osd.103",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 103,
                             "device_class": "ssd",
@@ -10345,14 +10345,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -213,
                         "name": "hpc-be113",
@@ -10458,11 +10458,11 @@
                       "children": [
                         {
                           "name": "osd.378",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 378,
                             "device_class": "ssd",
@@ -10473,18 +10473,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.206",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 206,
                             "device_class": "ssd",
@@ -10495,18 +10495,18 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         },
                         {
                           "name": "osd.119",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 119,
                             "device_class": "ssd",
@@ -10517,14 +10517,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 3,
+                      "osd_health": 0,
                       "data": {
                         "id": -167,
                         "name": "hpc-be064",
@@ -10630,11 +10630,11 @@
                       "children": [
                         {
                           "name": "osd.344",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 344,
                             "device_class": "ssd",
@@ -10645,7 +10645,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -10696,7 +10696,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -151,
                         "name": "hpc-be049",
@@ -10716,11 +10716,11 @@
                       "children": [
                         {
                           "name": "osd.548",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 548,
                             "device_class": "ssd",
@@ -10731,7 +10731,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -10782,7 +10782,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -269,
                         "name": "hpc-be032",
@@ -11104,11 +11104,11 @@
                         },
                         {
                           "name": "osd.372",
-                          "status": "down",
+                          "status": "up",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 0,
+                          "osd_health": 1,
                           "data": {
                             "id": 372,
                             "device_class": "ssd",
@@ -11119,14 +11119,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "down",
+                            "status": "up",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 0,
+                      "osd_health": 1,
                       "data": {
                         "id": -255,
                         "name": "hpc-be014",
@@ -11340,11 +11340,11 @@
                         },
                         {
                           "name": "osd.29",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 29,
                             "device_class": "ssd",
@@ -11355,7 +11355,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -11384,7 +11384,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -225,
                         "name": "hpc-be002",
@@ -11400,7 +11400,7 @@
                     }
                   ],
                   "osd_counts": 48,
-                  "osd_health": 6,
+                  "osd_health": 4,
                   "data": {
                     "id": -152,
                     "name": "SW12",
@@ -11523,11 +11523,11 @@
                       "children": [
                         {
                           "name": "osd.375",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 375,
                             "device_class": "ssd",
@@ -11538,7 +11538,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -11589,7 +11589,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -199,
                         "name": "hpc-be128",
@@ -11609,11 +11609,11 @@
                       "children": [
                         {
                           "name": "osd.335",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 335,
                             "device_class": "ssd",
@@ -11624,7 +11624,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -11675,7 +11675,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -165,
                         "name": "hpc-be107",
@@ -11889,11 +11889,11 @@
                         },
                         {
                           "name": "osd.248",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 248,
                             "device_class": "ssd",
@@ -11904,7 +11904,7 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
@@ -11933,7 +11933,7 @@
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -169,
                         "name": "hpc-be072",
@@ -11997,11 +11997,11 @@
                         },
                         {
                           "name": "osd.74",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 74,
                             "device_class": "ssd",
@@ -12012,14 +12012,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -157,
                         "name": "hpc-be067",
@@ -12083,11 +12083,11 @@
                         },
                         {
                           "name": "osd.90",
-                          "status": "up",
+                          "status": "down",
                           "type": "osd",
                           "exists": 1,
                           "osd_counts": 1,
-                          "osd_health": 1,
+                          "osd_health": 0,
                           "data": {
                             "id": 90,
                             "device_class": "ssd",
@@ -12098,14 +12098,14 @@
                             "depth": 5,
                             "pool_weights": {},
                             "exists": 1,
-                            "status": "up",
+                            "status": "down",
                             "reweight": 1.0,
                             "primary_affinity": 1.0
                           }
                         }
                       ],
                       "osd_counts": 3,
-                      "osd_health": 1,
+                      "osd_health": 0,
                       "data": {
                         "id": -221,
                         "name": "hpc-be055",
@@ -12121,7 +12121,7 @@
                     }
                   ],
                   "osd_counts": 24,
-                  "osd_health": 5,
+                  "osd_health": 0,
                   "data": {
                     "id": -132,
                     "name": "SW11",
@@ -12142,7 +12142,7 @@
                 }
               ],
               "osd_counts": 207,
-              "osd_health": 27,
+              "osd_health": 8,
               "data": {
                 "id": -301,
                 "name": "SW",
@@ -12160,7 +12160,7 @@
             }
           ],
           "osd_counts": 402,
-          "osd_health": 43,
+          "osd_health": 20,
           "data": {
             "id": -5,
             "name": "0513-S-0034",
@@ -12175,7 +12175,7 @@
         }
       ],
       "osd_counts": 402,
-      "osd_health": 43,
+      "osd_health": 20,
       "data": {
         "id": -1,
         "name": "default",

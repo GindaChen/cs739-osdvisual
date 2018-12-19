@@ -4,19 +4,31 @@
 
 function main(url){
 	d3.json(url, function(text){
-		createVisualization(text);
+		if (!root) {
+			createVisualization(text);	
+		}else{
+			updateVisualization(text);
+			// updateData(text);
+		}
 	});
 }
 
+
+
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/kelly.product.json"
-url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
-// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
+// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
+// url2 = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/beesly.product.json"
+// url2 = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
 
-// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/erin.timeseries.0.json"
+url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/erin.timeseries.0.json"
+url2 = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/erin.timeseries.1.json"
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/kelly.timeseries.1.json"
-// url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/erin.timeseries.1.json"
+
 main(url)
+setTimeout(function(){
+	main(url2)
+} , 1000)
 
 
 
@@ -103,7 +115,11 @@ function createVisualization(json) {
 		.attr("r", radius)
 		.style("opacity", 0);
 
-	root = d3.hierarchy(json)
+	updateVisualization(json);
+ };
+
+ function updateVisualization(json){
+ 	root = d3.hierarchy(json)
 		// Forgive me for the magic numbers. It is 4am and my mind doesn't work right
 		// #Mike: It's fine. We all have the desperation. But what is the reason of the line?
 		.sum(function(d) {
@@ -117,7 +133,11 @@ function createVisualization(json) {
 	// TODO: Optional Filter - link it into panel
 	var nodes = partition(root).descendants();
 
+	// var path = vis.data([json]).selectAll("path").remove();
 	var path = vis.data([json]).selectAll("path")
+		.data([json]).exit().remove();
+
+	path = vis.data([json]).selectAll("path")
 		.data(nodes)
 		.enter().append("svg:path")
 		.attr("display", function(d) { return d.depth ? null : "none"; })
@@ -175,8 +195,7 @@ function createVisualization(json) {
 	// TODO: An elegant (black magic) solution
 	//  to avoid gliches of the first click option
 	click(root);
-
- };
+ }
 
 // TODO: Implement for transition
 // @Define manage the
@@ -210,7 +229,7 @@ function createVisualization(json) {
     });
 
  	
-	t = vis.transition().duration(300);
+	t = vis.transition().duration(10);
 
     d3.selectAll("path").transition(t)
 	.tween("data", d => {
