@@ -21,8 +21,8 @@ function main(url){
 // url2 = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/erin.product.json"
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/product/jim.product.json"
 
-url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/erin.timeseries.0.json"
-url2 = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/erin.timeseries.1.json"
+url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/kelly.timeseries.0.json"
+url2 = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/kelly.timeseries.1.json"
 // url = "https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data/timeseries/kelly.timeseries.1.json"
 
 main(url)
