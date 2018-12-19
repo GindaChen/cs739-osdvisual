@@ -194,7 +194,7 @@ function createVisualization(json) {
 
 	// TODO: An elegant (black magic) solution
 	//  to avoid gliches of the first click option
-	click(root);
+	// click(root);
  }
 
 // TODO: Implement for transition
