@@ -109,7 +109,12 @@ d3.json("https://raw.githubusercontent.com/GindaChen/cs739-osdvisual/master/data
 
   var lables = node.append("text")
       .text(function(d) {
-        return `${d.name} [${d.type}] ${d.status}`;
+        if(d.type == "osd"){
+          return `${d.name} [${d.type}] ${d.status}`;
+        }
+        else {
+          return `${d.name} [${d.type}]`;
+        }
       })
       .attr('x', 6)
       .attr('y', 3)
