@@ -24,8 +24,8 @@ main(url)
 // @Define Dimensions of sunburst.
 var width = 750;
 var height = 600;
+var cornerRadius = 20;
 var radius = Math.min(width, height) / 2;
-
 
 // Breadcrumb dimensions:
 // width, height, spacing, width of tip/tail.
@@ -69,13 +69,16 @@ var vis = d3.select("#chart").append("svg:svg")
 var partition = d3.partition()
 	.size([2 * Math.PI, radius * radius]);
 
+
+
 var arc = d3.arc()
 	.startAngle(function(d) { return d.x0; })
 	.endAngle(function(d) { return d.x1; })
 	.padAngle(d => Math.min((d.x1 - d.x0) / 2, 0.005))
   	.padRadius(radius / 2)
 	.innerRadius(function(d) { return Math.sqrt(d.y0); })
-	.outerRadius(function(d) { return Math.sqrt(d.y1); });
+	.outerRadius(function(d) { return Math.sqrt(d.y1); })
+	.cornerRadius(cornerRadius)
 
 
 var root = null;
