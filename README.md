@@ -4,8 +4,6 @@
 
 [TOC]
 
-
-
 ## Project Description
 
 Show OSD Hierarchical structure in Ceph cluster.
@@ -30,6 +28,7 @@ Show OSD Hierarchical structure in Ceph cluster.
     "nodes": [ <nodes...> ],
     "strays": [ <nodes...> ]
 }
+
 # OSD Node
 {
     "id": 831,
@@ -45,6 +44,7 @@ Show OSD Hierarchical structure in Ceph cluster.
     "reweight": 1.000000,
     "primary_affinity": 1.000000
 }
+
 # Internal Node (not OSD)
 {
     "id": -92,		 # id : unique node id
@@ -111,6 +111,8 @@ Zoomable Sequence Sunburst is the model we target on. Specifically we will focus
 
 
 ## Changelog (12/14 update)
+
+More to come with Remzi's comments ...
 
 #### Important
 
